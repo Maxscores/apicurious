@@ -4,7 +4,21 @@ class User < ApplicationRecord
       new_user.uid = auth_hash.uid
       new_user.screen_name = auth_hash.extra.raw_info.login
       new_user.oauth_token = auth_hash.credentials.token
-      new_user.avatar_url = auth_hash.extra.raw_info.avatar_url
     end
+  end
+
+  def github_connection
+    Faraday.new(:url => "https://api.github.com", :headers => {"Authorization" => "token #{self.oauth_token}"})
+  end
+
+  def get_user_info
+    response = github_connection.get do |req|
+      req.url '/user'
+    end
+    JSON.parse(response.body)
+  end
+
+  def method_name
+
   end
 end
