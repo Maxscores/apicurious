@@ -1,4 +1,10 @@
 <ul>
   <li><%= current_user.screen_name %></li>
   <li><%= current_user.uid %></li>
+  <li><%= @basic_info %></li>
+  <li><%= image_tag @user.avatar_url %></li>
+  <% @repos.each do |repo| %>
+  <li><%= repo.name %></li>
+  <% end %>
+
 </ul>

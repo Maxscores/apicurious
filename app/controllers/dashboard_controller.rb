@@ -1,5 +1,7 @@
 class DashboardController < ApplicationController
   def index
-    @basic_info = current_user.get_user_info
+    @user = GithubUser.new(current_user)
+    @basic_info = @user.get_user_info
+    @repos = @user.get_repos
   end
 end

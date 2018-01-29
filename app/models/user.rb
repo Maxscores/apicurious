@@ -7,18 +7,5 @@ class User < ApplicationRecord
     end
   end
 
-  def github_connection
-    Faraday.new(:url => "https://api.github.com", :headers => {"Authorization" => "token #{self.oauth_token}"})
-  end
-
-  def get_user_info
-    response = github_connection.get do |req|
-      req.url '/user'
-    end
-    JSON.parse(response.body)
-  end
-
-  def method_name
-
-  end
+  
 end
