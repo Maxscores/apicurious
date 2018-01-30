@@ -7,15 +7,15 @@ nav {
   justify-content: space-around;
 }
 
-a {
-  color: $text-on-primary-color;
+.nav-button {
+  color: $lite-grey;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
 }
 
 .octicon {
-  fill: $text-on-primary-color;
+  fill: $lite-grey;
 }
 
 .menu {

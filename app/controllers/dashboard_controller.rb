@@ -5,5 +5,7 @@ class DashboardController < ApplicationController
     @repos = @user.get_repos
     @organizations = @user.get_organizations
     @stars = @user.get_stars
+    @followers
+    @following
   end
 end

@@ -10,10 +10,14 @@ class GithubConnection
     Faraday.new(:url => "https://api.github.com", :headers => {"Authorization" => "token #{token}"})
   end
 
-  def get_user_info
-    response = github_connection.get do |req|
-      req.url '/user'
+  def get_url(url)
+    github_connection.get do |req|
+      req.url url
     end
+  end
+
+  def get_user_info
+    response = get_url('/user')
     GithubUser.new(JSON.parse(response.body))
   end
 
