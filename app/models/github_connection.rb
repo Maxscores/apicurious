@@ -28,13 +28,6 @@ class GithubConnection
     end
   end
 
-  def get_organizations
-    response = get_url("/users/#{username}/orgs")
-    JSON.parse(response.body).map do |org|
-      org["login"]
-    end
-  end
-
   def get_stars
     response = get_url("/users/#{username}/starred")
     JSON.parse(response.body).map do |star|
