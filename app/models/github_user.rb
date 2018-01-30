@@ -1,5 +1,6 @@
 class GithubUser < GithubConnection
-  attr_reader :avatar_url,
+  attr_reader :username,
+              :avatar_url,
               :full_name,
               :bio,
               :public_repos_count,
@@ -12,6 +13,7 @@ class GithubUser < GithubConnection
               :email
 
   def initialize(user_info)
+    @username = user_info["login"]
     @avatar_url = user_info["avatar_url"]
     @full_name = user_info["name"]
     @bio = user_info["bio"]
