@@ -1,0 +1,17 @@
+<div class="section-tabs">
+  <%= link_to "<h3 class=button-text>Overview</h3>".html_safe, dashboard_index_path, class: "section-button" %>
+  <%= link_to "<h3 class=button-text>Repositories <span>#{@presenter.repositories.count}</span></h3>".html_safe, dashboard_index_path(tab: "repositories"), class: "section-button" %>
+  <%= link_to "<h3 class=button-text>Stars <span>#{@presenter.stars.count}</span></h3>".html_safe, dashboard_index_path(tab: "stars"), class: "section-button selected" %>
+  <%= link_to "<h3 class=button-text>Followers <span>#{@presenter.followers.count}</span></h3>".html_safe, dashboard_index_path(tab: "followers"), class: "section-button" %>
+  <%= link_to "<h3 class=button-text>Following <span>#{@presenter.following.count}</span></h3>".html_safe, dashboard_index_path(tab: "following"), class: "section-button" %>
+</div>
+<div class="repos">
+  <% @presenter.stars.each do |repo| %>
+    <div class="repo">
+      <%= link_to repo.name, repo.http_url ,class: "repo-link", disabled: true %>
+      <div class="details">
+      Updated <%= time_ago_in_words(repo.updated_at) %> ago
+      </div>
+    </div>
+  <% end %>
+</div>
