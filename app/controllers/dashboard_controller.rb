@@ -1,10 +1,11 @@
 class DashboardController < ApplicationController
   def index
-    @user = GithubUser.new(current_user)
-    @basic_info = @user.get_user_info
+    @user = GithubConnection.new(current_user)
+    @github_user = @user.get_user_info
     @repos = @user.get_repos
-    @events = @user.get_commits
     @organizations = @user.get_organizations
-    @stars = @user.stars
+    @stars = @user.get_stars
+    @followers
+    @following
   end
 end
