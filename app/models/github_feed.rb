@@ -1,4 +1,0 @@
-class GithubFeed
-
-
-end
