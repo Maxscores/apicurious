@@ -1,11 +1,5 @@
-
 <div class="repos">
   <% @presenter.stars.each do |repo| %>
-    <div class="repo">
-      <%= link_to repo.name, repo.http_url ,class: "repo-link", disabled: true %>
-      <div class="details">
-      Updated <%= time_ago_in_words(repo.updated_at) %> ago
-      </div>
-    </div>
+    <%= render partial: "repo", :locals => {:repo => repo}%>
   <% end %>
 </div>

@@ -87,7 +87,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 50px;
+        min-height: 50px;
         padding: 30px 0 30px 0;
         border-bottom: 1px $grey solid;
         .repo-link {
