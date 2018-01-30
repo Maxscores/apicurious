@@ -1,0 +1,18 @@
+<div class="section-tabs">
+  <%= link_to "<h3 class=button-text>Overview</h3>".html_safe, dashboard_index_path, class: "section-button overview" %>
+  <%= link_to "<h3 class=button-text>Repositories <span>#{@presenter.repositories.count}</span></h3>".html_safe, dashboard_index_path(tab: "repositories"), class: "section-button repositories" %>
+  <%= link_to "<h3 class=button-text>Stars <span>#{@presenter.stars.count}</span></h3>".html_safe, dashboard_index_path(tab: "stars"), class: "section-button stars" %>
+  <%= link_to "<h3 class=button-text>Followers <span>#{@presenter.followers.count}</span></h3>".html_safe, dashboard_index_path(tab: "followers"), class: "section-button following" %>
+  <%= link_to "<h3 class=button-text>Following <span>#{@presenter.following.count}</span></h3>".html_safe, dashboard_index_path(tab: "following"), class: "section-button followers selected" %>
+</div>
+<div class="users">
+  <% @presenter.following.each do |user| %>
+    <div class="user">
+      <%= image_tag user.avatar_url, class: "small-image"%>
+      <%= user.full_name %>
+      <%= user.username %>
+      <%= user.company %>
+      <%= user.location %>
+    </div>
+  <% end %>
+</div>
