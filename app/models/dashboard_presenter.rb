@@ -12,8 +12,8 @@ class DashboardPresenter
     @repositories ||= @connection.get_repos
     @organizations ||= @connection.get_organizations
     @stars ||= @connection.get_stars
-    @followers ||= nil
-    @following ||= nil
+    @followers ||= @connection.get_followers
+    @following ||= @connection.get_following
   end
 
   def avatar_url

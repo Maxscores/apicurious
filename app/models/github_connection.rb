@@ -22,29 +22,37 @@ class GithubConnection
   end
 
   def get_repos
-    response = github_connection.get do |req|
-      req.url "/users/#{username}/repos"
-    end
+    response = get_url("/users/#{username}/repos")
     JSON.parse(response.body).map do |repo|
       GithubRepo.new(repo)
     end
   end
 
   def get_organizations
-    response = github_connection.get do |req|
-      req.url "/users/#{username}/orgs"
-    end
+    response = get_url("/users/#{username}/orgs")
     JSON.parse(response.body).map do |org|
       org["login"]
     end
   end
 
   def get_stars
-    response = github_connection.get do |req|
-      req.url "/users/#{username}/starred"
-    end
+    response = get_url("/users/#{username}/starred")
     JSON.parse(response.body).map do |star|
       GithubRepo.new(star)
+    end
+  end
+
+  def get_followers
+    response = get_url("/user/followers")
+    JSON.parse(response.body).map do |user|
+      GithubUser.new(user)
+    end
+  end
+
+  def get_following
+    response = get_url("/user/following")
+    JSON.parse(response.body).map do |user|
+      GithubUser.new(user)
     end
   end
 end
