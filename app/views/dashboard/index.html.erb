@@ -39,7 +39,7 @@
     <div class="repos">
       <% @repos.each do |repo| %>
         <div class="repo">
-          <%= link_to repo.name, "", class: "repo-link" %>
+          <%= link_to repo.name, repo.http_url ,class: "repo-link", disabled: true %>
           <div class="details">
           Updated <%= time_ago_in_words(repo.updated_at) %> ago
           </div>
