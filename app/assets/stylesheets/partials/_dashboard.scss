@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 10px 20px 10px;
+}
+
+.profile-card {
+  width: 240px;
+  padding: 0 5px 0 5px;
+}
+
+.profile-pic {
+  height: 230px;
+  width: 230px;
+}
+
+.full-name {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.bio {
+
+}
+
+.details {
+  border-top: 1px #e1e4e8 solid;
+}
+
+.content {
+  background-color: black;
+  width: 770px;
+}
