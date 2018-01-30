@@ -45,6 +45,7 @@ class GithubConnection
   def get_followers
     response = get_url("/user/followers")
     JSON.parse(response.body).map do |user|
+      user = JSON.parse(get_url("/users/#{user["login"]}").body)
       GithubUser.new(user)
     end
   end
