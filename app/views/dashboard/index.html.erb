@@ -48,33 +48,6 @@
     </div>
   </div>
   <div class="content">
-    <div class="section-tabs">
-      <div class="section-button" id="overview">
-        <h3 class="button-text">Overview</h3>
-      </div>
-      <%= link_to "Overview", dashboard_path, class: "section-button" %>
-      <div class="section-button selected" id="repositories">
-        <h3 class="button-text">Repositories <span><%= @presenter.repositories.count %></span></h3>
-      </div>
-      <div class="section-button" id="stars">
-        <h3 class="button-text">Stars <span><%= @presenter.stars.count %></span></h3>
-      </div>
-      <div class="section-button" id="followers">
-        <h3 class="button-text">Followers <span><%= @presenter.github_user.followers_count %></span></h3>
-      </div>
-      <div class="section-button" id="following">
-        <h3 class="button-text">Following <span><%= @presenter.github_user.following_count %></span></h3>
-      </div>
-    </div>
-    <div class="repos">
-      <% @presenter.repositories.each do |repo| %>
-        <div class="repo">
-          <%= link_to repo.name, repo.http_url ,class: "repo-link", disabled: true %>
-          <div class="details">
-          Updated <%= time_ago_in_words(repo.updated_at) %> ago
-          </div>
-        </div>
-      <% end %>
-    </div>
+    <%= tab_selection %>
   </div>
 </div>
