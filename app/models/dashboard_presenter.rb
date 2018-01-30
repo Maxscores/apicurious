@@ -4,16 +4,31 @@ class DashboardPresenter
               :organizations,
               :stars,
               :followers,
-              :following
+              :following,
+              :connection,
+              :tab
 
-  def initialize(user)
+  def initialize(user, tab)
     @connection = GithubConnection.new(user)
-    @github_user ||= @connection.get_user_info
-    @repositories ||= @connection.get_repos
-    @organizations ||= @connection.get_organizations
-    @stars ||= @connection.get_stars
-    @followers ||= @connection.get_followers
-    @following ||= @connection.get_following
+    @github_user = @connection.get_user_info
+    @repositories = nil
+    @stars = @connection.get_stars
+    @followers = nil
+    @following = nil
+    @tab = tab
+  end
+
+  def present
+    if tab == "repositories"
+      @repositories = connection.get_repos
+    elsif tab == "stars"
+      @stars = connection.get_stars
+    elsif tab == "followers"
+      @followers = connection.get_followers
+    elsif tab == "following"
+      @following = connection.get_following
+    end
+    self
   end
 
   def avatar_url
@@ -42,5 +57,17 @@ class DashboardPresenter
 
   def blog
     github_user.blog
+  end
+
+  def followers_count
+    github_user.followers_count
+  end
+
+  def following_count
+    github_user.following_count
+  end
+
+  def repository_count
+    github_user.following_count
   end
 end
