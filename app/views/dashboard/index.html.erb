@@ -48,6 +48,7 @@
     </div>
   </div>
   <div class="content">
-    <%= tab_selection %>
+    <%= render "dashboard/tabs" %>
+    <%= tab_data(@presenter.tab) %>
   </div>
 </div>
