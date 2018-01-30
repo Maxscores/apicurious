@@ -6,8 +6,11 @@ class GithubUser < GithubConnection
               :public_gists_count,
               :followers_count,
               :following_count,
-              :location
-              
+              :location,
+              :company,
+              :blog,
+              :email
+
   def initialize(user_info)
     @avatar_url = user_info["avatar_url"]
     @full_name = user_info["name"]
@@ -17,5 +20,8 @@ class GithubUser < GithubConnection
     @followers_count = user_info["followers"]
     @following_count = user_info["following"]
     @location = user_info["location"]
+    @company = user_info["company"]
+    @blog = user_info["blog"]
+    @email = user_info["email"]
   end
 end
