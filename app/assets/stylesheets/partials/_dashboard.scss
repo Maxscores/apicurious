@@ -105,6 +105,33 @@
     }
     .users {
       .user {
+        padding: 30px 0 30px 0;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px $grey solid;
+        .details {
+          padding-left: 10px;
+          .names {
+            padding-bottom: 5px;
+            .full-name {
+              color: #25292E;
+            }
+          }
+          .bio {
+            padding-bottom: 5px;
+            font-size: 12px;
+          }
+          .places {
+            font-size: 12px;
+            height: 15px;
+            vertical-align: center;
+            fill: $dark-grey;
+            .octicon {
+              fill: $dark-grey;
+              height: 15px;
+            }
+          }
+        }
         .small-image {
           height: 45px;
           width: 45px;
