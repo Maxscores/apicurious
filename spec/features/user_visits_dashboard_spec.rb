@@ -85,4 +85,28 @@ describe "User visits dashboard" do
       end
     end
   end
+
+  describe "and clicks on followering tab" do
+    it "sees a list of users they're following" do
+      VCR.use_cassette("features/user_sees_following") do
+        allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+        visit '/dashboard'
+
+        click_on "Following"
+
+        within (".selected") do
+          expect(page).to have_content("Following")
+        end
+        expect(page).to have_css(".user", count: 8)
+        within first(".user") do
+          expect(page).to have_content("Josh Mejia")
+          expect(page).to have_content("jmejia")
+          expect(page).to have_css(".places")
+          expect(page).to have_content("Denver")
+          expect(page).to have_content("Turing")
+        end
+      end
+    end
+  end
 end

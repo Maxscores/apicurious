@@ -1,0 +1,1038 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4955'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"4f3450db98532514705ce40f0ef87aa7"
+      Last-Modified:
+      - Tue, 30 Jan 2018 18:50:07 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.045854'
+      X-Github-Request-Id:
+      - C82F:0B60:E9D454:1E14043:5A7239E2
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"Maxscores","id":29938166,"avatar_url":"https://avatars1.githubusercontent.com/u/29938166?v=4","gravatar_id":"","url":"https://api.github.com/users/Maxscores","html_url":"https://github.com/Maxscores","followers_url":"https://api.github.com/users/Maxscores/followers","following_url":"https://api.github.com/users/Maxscores/following{/other_user}","gists_url":"https://api.github.com/users/Maxscores/gists{/gist_id}","starred_url":"https://api.github.com/users/Maxscores/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Maxscores/subscriptions","organizations_url":"https://api.github.com/users/Maxscores/orgs","repos_url":"https://api.github.com/users/Maxscores/repos","events_url":"https://api.github.com/users/Maxscores/events{/privacy}","received_events_url":"https://api.github.com/users/Maxscores/received_events","type":"User","site_admin":false,"name":"Max
+        Stackhouse","company":"@turingschool","blog":"https://medium.com/@maxstackhouse","location":"Colorado","email":"maxstackhouse@gmail.com","hireable":true,"bio":"@turingschool
+        - Student(Backend Software Development)\r\n\r\n@ColoradoSchoolofMines - B.S.
+        Metallurgical and Materials Engineering ","public_repos":28,"public_gists":18,"followers":4,"following":8,"created_at":"2017-07-06T03:55:31Z","updated_at":"2018-01-30T18:50:07Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:22 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/Maxscores/starred
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4954'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"01932982500fbfa658c06dce62c7962d"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.133567'
+      X-Github-Request-Id:
+      - C830:0B62:C57D1D:1FBEBBC:5A7239E2
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":52239948,"name":"Pain-Caver","full_name":"stevepentler/Pain-Caver","owner":{"login":"stevepentler","id":13510375,"avatar_url":"https://avatars0.githubusercontent.com/u/13510375?v=4","gravatar_id":"","url":"https://api.github.com/users/stevepentler","html_url":"https://github.com/stevepentler","followers_url":"https://api.github.com/users/stevepentler/followers","following_url":"https://api.github.com/users/stevepentler/following{/other_user}","gists_url":"https://api.github.com/users/stevepentler/gists{/gist_id}","starred_url":"https://api.github.com/users/stevepentler/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/stevepentler/subscriptions","organizations_url":"https://api.github.com/users/stevepentler/orgs","repos_url":"https://api.github.com/users/stevepentler/repos","events_url":"https://api.github.com/users/stevepentler/events{/privacy}","received_events_url":"https://api.github.com/users/stevepentler/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/stevepentler/Pain-Caver","description":"Strava
+        Workout Comparisons in Rails","fork":false,"url":"https://api.github.com/repos/stevepentler/Pain-Caver","forks_url":"https://api.github.com/repos/stevepentler/Pain-Caver/forks","keys_url":"https://api.github.com/repos/stevepentler/Pain-Caver/keys{/key_id}","collaborators_url":"https://api.github.com/repos/stevepentler/Pain-Caver/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/stevepentler/Pain-Caver/teams","hooks_url":"https://api.github.com/repos/stevepentler/Pain-Caver/hooks","issue_events_url":"https://api.github.com/repos/stevepentler/Pain-Caver/issues/events{/number}","events_url":"https://api.github.com/repos/stevepentler/Pain-Caver/events","assignees_url":"https://api.github.com/repos/stevepentler/Pain-Caver/assignees{/user}","branches_url":"https://api.github.com/repos/stevepentler/Pain-Caver/branches{/branch}","tags_url":"https://api.github.com/repos/stevepentler/Pain-Caver/tags","blobs_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/refs{/sha}","trees_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/trees{/sha}","statuses_url":"https://api.github.com/repos/stevepentler/Pain-Caver/statuses/{sha}","languages_url":"https://api.github.com/repos/stevepentler/Pain-Caver/languages","stargazers_url":"https://api.github.com/repos/stevepentler/Pain-Caver/stargazers","contributors_url":"https://api.github.com/repos/stevepentler/Pain-Caver/contributors","subscribers_url":"https://api.github.com/repos/stevepentler/Pain-Caver/subscribers","subscription_url":"https://api.github.com/repos/stevepentler/Pain-Caver/subscription","commits_url":"https://api.github.com/repos/stevepentler/Pain-Caver/commits{/sha}","git_commits_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/commits{/sha}","comments_url":"https://api.github.com/repos/stevepentler/Pain-Caver/comments{/number}","issue_comment_url":"https://api.github.com/repos/stevepentler/Pain-Caver/issues/comments{/number}","contents_url":"https://api.github.com/repos/stevepentler/Pain-Caver/contents/{+path}","compare_url":"https://api.github.com/repos/stevepentler/Pain-Caver/compare/{base}...{head}","merges_url":"https://api.github.com/repos/stevepentler/Pain-Caver/merges","archive_url":"https://api.github.com/repos/stevepentler/Pain-Caver/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/stevepentler/Pain-Caver/downloads","issues_url":"https://api.github.com/repos/stevepentler/Pain-Caver/issues{/number}","pulls_url":"https://api.github.com/repos/stevepentler/Pain-Caver/pulls{/number}","milestones_url":"https://api.github.com/repos/stevepentler/Pain-Caver/milestones{/number}","notifications_url":"https://api.github.com/repos/stevepentler/Pain-Caver/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/stevepentler/Pain-Caver/labels{/name}","releases_url":"https://api.github.com/repos/stevepentler/Pain-Caver/releases{/id}","deployments_url":"https://api.github.com/repos/stevepentler/Pain-Caver/deployments","created_at":"2016-02-22T02:05:15Z","updated_at":"2017-12-27T21:03:28Z","pushed_at":"2016-07-09T17:43:41Z","git_url":"git://github.com/stevepentler/Pain-Caver.git","ssh_url":"git@github.com:stevepentler/Pain-Caver.git","clone_url":"https://github.com/stevepentler/Pain-Caver.git","svn_url":"https://github.com/stevepentler/Pain-Caver","homepage":"https://paincaver-app.herokuapp.com/","size":10294,"stargazers_count":7,"watchers_count":7,"language":"JavaScript","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":1,"mirror_url":null,"archived":false,"open_issues_count":6,"license":null,"forks":1,"open_issues":6,"watchers":7,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":35051839,"name":"connectiq-apps","full_name":"garmin/connectiq-apps","owner":{"login":"garmin","id":8899972,"avatar_url":"https://avatars1.githubusercontent.com/u/8899972?v=4","gravatar_id":"","url":"https://api.github.com/users/garmin","html_url":"https://github.com/garmin","followers_url":"https://api.github.com/users/garmin/followers","following_url":"https://api.github.com/users/garmin/following{/other_user}","gists_url":"https://api.github.com/users/garmin/gists{/gist_id}","starred_url":"https://api.github.com/users/garmin/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/garmin/subscriptions","organizations_url":"https://api.github.com/users/garmin/orgs","repos_url":"https://api.github.com/users/garmin/repos","events_url":"https://api.github.com/users/garmin/events{/privacy}","received_events_url":"https://api.github.com/users/garmin/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/garmin/connectiq-apps","description":"A
+        collection of Connect IQ apps.","fork":false,"url":"https://api.github.com/repos/garmin/connectiq-apps","forks_url":"https://api.github.com/repos/garmin/connectiq-apps/forks","keys_url":"https://api.github.com/repos/garmin/connectiq-apps/keys{/key_id}","collaborators_url":"https://api.github.com/repos/garmin/connectiq-apps/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/garmin/connectiq-apps/teams","hooks_url":"https://api.github.com/repos/garmin/connectiq-apps/hooks","issue_events_url":"https://api.github.com/repos/garmin/connectiq-apps/issues/events{/number}","events_url":"https://api.github.com/repos/garmin/connectiq-apps/events","assignees_url":"https://api.github.com/repos/garmin/connectiq-apps/assignees{/user}","branches_url":"https://api.github.com/repos/garmin/connectiq-apps/branches{/branch}","tags_url":"https://api.github.com/repos/garmin/connectiq-apps/tags","blobs_url":"https://api.github.com/repos/garmin/connectiq-apps/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/garmin/connectiq-apps/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/garmin/connectiq-apps/git/refs{/sha}","trees_url":"https://api.github.com/repos/garmin/connectiq-apps/git/trees{/sha}","statuses_url":"https://api.github.com/repos/garmin/connectiq-apps/statuses/{sha}","languages_url":"https://api.github.com/repos/garmin/connectiq-apps/languages","stargazers_url":"https://api.github.com/repos/garmin/connectiq-apps/stargazers","contributors_url":"https://api.github.com/repos/garmin/connectiq-apps/contributors","subscribers_url":"https://api.github.com/repos/garmin/connectiq-apps/subscribers","subscription_url":"https://api.github.com/repos/garmin/connectiq-apps/subscription","commits_url":"https://api.github.com/repos/garmin/connectiq-apps/commits{/sha}","git_commits_url":"https://api.github.com/repos/garmin/connectiq-apps/git/commits{/sha}","comments_url":"https://api.github.com/repos/garmin/connectiq-apps/comments{/number}","issue_comment_url":"https://api.github.com/repos/garmin/connectiq-apps/issues/comments{/number}","contents_url":"https://api.github.com/repos/garmin/connectiq-apps/contents/{+path}","compare_url":"https://api.github.com/repos/garmin/connectiq-apps/compare/{base}...{head}","merges_url":"https://api.github.com/repos/garmin/connectiq-apps/merges","archive_url":"https://api.github.com/repos/garmin/connectiq-apps/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/garmin/connectiq-apps/downloads","issues_url":"https://api.github.com/repos/garmin/connectiq-apps/issues{/number}","pulls_url":"https://api.github.com/repos/garmin/connectiq-apps/pulls{/number}","milestones_url":"https://api.github.com/repos/garmin/connectiq-apps/milestones{/number}","notifications_url":"https://api.github.com/repos/garmin/connectiq-apps/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/garmin/connectiq-apps/labels{/name}","releases_url":"https://api.github.com/repos/garmin/connectiq-apps/releases{/id}","deployments_url":"https://api.github.com/repos/garmin/connectiq-apps/deployments","created_at":"2015-05-04T18:27:13Z","updated_at":"2018-01-26T20:33:28Z","pushed_at":"2018-01-02T13:36:08Z","git_url":"git://github.com/garmin/connectiq-apps.git","ssh_url":"git@github.com:garmin/connectiq-apps.git","clone_url":"https://github.com/garmin/connectiq-apps.git","svn_url":"https://github.com/garmin/connectiq-apps","homepage":null,"size":2477,"stargazers_count":101,"watchers_count":101,"language":"Java","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":46,"mirror_url":null,"archived":false,"open_issues_count":3,"license":{"key":"apache-2.0","name":"Apache
+        License 2.0","spdx_id":"Apache-2.0","url":"https://api.github.com/licenses/apache-2.0"},"forks":46,"open_issues":3,"watchers":101,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":15799406,"name":"strava-api-v3","full_name":"jaredholdcroft/strava-api-v3","owner":{"login":"jaredholdcroft","id":690391,"avatar_url":"https://avatars2.githubusercontent.com/u/690391?v=4","gravatar_id":"","url":"https://api.github.com/users/jaredholdcroft","html_url":"https://github.com/jaredholdcroft","followers_url":"https://api.github.com/users/jaredholdcroft/followers","following_url":"https://api.github.com/users/jaredholdcroft/following{/other_user}","gists_url":"https://api.github.com/users/jaredholdcroft/gists{/gist_id}","starred_url":"https://api.github.com/users/jaredholdcroft/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jaredholdcroft/subscriptions","organizations_url":"https://api.github.com/users/jaredholdcroft/orgs","repos_url":"https://api.github.com/users/jaredholdcroft/repos","events_url":"https://api.github.com/users/jaredholdcroft/events{/privacy}","received_events_url":"https://api.github.com/users/jaredholdcroft/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/jaredholdcroft/strava-api-v3","description":"Strava
+        API V3","fork":false,"url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3","forks_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/forks","keys_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/keys{/key_id}","collaborators_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/teams","hooks_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/hooks","issue_events_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/issues/events{/number}","events_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/events","assignees_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/assignees{/user}","branches_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/branches{/branch}","tags_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/tags","blobs_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/refs{/sha}","trees_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/trees{/sha}","statuses_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/statuses/{sha}","languages_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/languages","stargazers_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/stargazers","contributors_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/contributors","subscribers_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/subscribers","subscription_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/subscription","commits_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/commits{/sha}","git_commits_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/commits{/sha}","comments_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/comments{/number}","issue_comment_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/issues/comments{/number}","contents_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/contents/{+path}","compare_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/compare/{base}...{head}","merges_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/merges","archive_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/downloads","issues_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/issues{/number}","pulls_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/pulls{/number}","milestones_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/milestones{/number}","notifications_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/labels{/name}","releases_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/releases{/id}","deployments_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/deployments","created_at":"2014-01-10T14:00:11Z","updated_at":"2017-12-14T04:36:03Z","pushed_at":"2017-05-31T11:59:50Z","git_url":"git://github.com/jaredholdcroft/strava-api-v3.git","ssh_url":"git@github.com:jaredholdcroft/strava-api-v3.git","clone_url":"https://github.com/jaredholdcroft/strava-api-v3.git","svn_url":"https://github.com/jaredholdcroft/strava-api-v3","homepage":null,"size":716,"stargazers_count":117,"watchers_count":117,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":true,"forks_count":44,"mirror_url":null,"archived":false,"open_issues_count":2,"license":{"key":"mit","name":"MIT
+        License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit"},"forks":44,"open_issues":2,"watchers":117,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":839336,"name":"simplecov","full_name":"colszowka/simplecov","owner":{"login":"colszowka","id":13972,"avatar_url":"https://avatars1.githubusercontent.com/u/13972?v=4","gravatar_id":"","url":"https://api.github.com/users/colszowka","html_url":"https://github.com/colszowka","followers_url":"https://api.github.com/users/colszowka/followers","following_url":"https://api.github.com/users/colszowka/following{/other_user}","gists_url":"https://api.github.com/users/colszowka/gists{/gist_id}","starred_url":"https://api.github.com/users/colszowka/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/colszowka/subscriptions","organizations_url":"https://api.github.com/users/colszowka/orgs","repos_url":"https://api.github.com/users/colszowka/repos","events_url":"https://api.github.com/users/colszowka/events{/privacy}","received_events_url":"https://api.github.com/users/colszowka/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/colszowka/simplecov","description":"Code
+        coverage for Ruby 1.9+ with a powerful configuration library and automatic
+        merging of coverage across test suites","fork":false,"url":"https://api.github.com/repos/colszowka/simplecov","forks_url":"https://api.github.com/repos/colszowka/simplecov/forks","keys_url":"https://api.github.com/repos/colszowka/simplecov/keys{/key_id}","collaborators_url":"https://api.github.com/repos/colszowka/simplecov/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/colszowka/simplecov/teams","hooks_url":"https://api.github.com/repos/colszowka/simplecov/hooks","issue_events_url":"https://api.github.com/repos/colszowka/simplecov/issues/events{/number}","events_url":"https://api.github.com/repos/colszowka/simplecov/events","assignees_url":"https://api.github.com/repos/colszowka/simplecov/assignees{/user}","branches_url":"https://api.github.com/repos/colszowka/simplecov/branches{/branch}","tags_url":"https://api.github.com/repos/colszowka/simplecov/tags","blobs_url":"https://api.github.com/repos/colszowka/simplecov/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/colszowka/simplecov/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/colszowka/simplecov/git/refs{/sha}","trees_url":"https://api.github.com/repos/colszowka/simplecov/git/trees{/sha}","statuses_url":"https://api.github.com/repos/colszowka/simplecov/statuses/{sha}","languages_url":"https://api.github.com/repos/colszowka/simplecov/languages","stargazers_url":"https://api.github.com/repos/colszowka/simplecov/stargazers","contributors_url":"https://api.github.com/repos/colszowka/simplecov/contributors","subscribers_url":"https://api.github.com/repos/colszowka/simplecov/subscribers","subscription_url":"https://api.github.com/repos/colszowka/simplecov/subscription","commits_url":"https://api.github.com/repos/colszowka/simplecov/commits{/sha}","git_commits_url":"https://api.github.com/repos/colszowka/simplecov/git/commits{/sha}","comments_url":"https://api.github.com/repos/colszowka/simplecov/comments{/number}","issue_comment_url":"https://api.github.com/repos/colszowka/simplecov/issues/comments{/number}","contents_url":"https://api.github.com/repos/colszowka/simplecov/contents/{+path}","compare_url":"https://api.github.com/repos/colszowka/simplecov/compare/{base}...{head}","merges_url":"https://api.github.com/repos/colszowka/simplecov/merges","archive_url":"https://api.github.com/repos/colszowka/simplecov/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/colszowka/simplecov/downloads","issues_url":"https://api.github.com/repos/colszowka/simplecov/issues{/number}","pulls_url":"https://api.github.com/repos/colszowka/simplecov/pulls{/number}","milestones_url":"https://api.github.com/repos/colszowka/simplecov/milestones{/number}","notifications_url":"https://api.github.com/repos/colszowka/simplecov/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/colszowka/simplecov/labels{/name}","releases_url":"https://api.github.com/repos/colszowka/simplecov/releases{/id}","deployments_url":"https://api.github.com/repos/colszowka/simplecov/deployments","created_at":"2010-08-15T15:28:56Z","updated_at":"2018-01-30T20:48:33Z","pushed_at":"2018-01-29T10:10:32Z","git_url":"git://github.com/colszowka/simplecov.git","ssh_url":"git@github.com:colszowka/simplecov.git","clone_url":"https://github.com/colszowka/simplecov.git","svn_url":"https://github.com/colszowka/simplecov","homepage":"","size":2041,"stargazers_count":3255,"watchers_count":3255,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":false,"has_pages":true,"forks_count":367,"mirror_url":null,"archived":false,"open_issues_count":49,"license":{"key":"mit","name":"MIT
+        License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit"},"forks":367,"open_issues":49,"watchers":3255,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":21002580,"name":"ruby-submissions","full_name":"turingschool/ruby-submissions","owner":{"login":"turingschool","id":7934292,"avatar_url":"https://avatars0.githubusercontent.com/u/7934292?v=4","gravatar_id":"","url":"https://api.github.com/users/turingschool","html_url":"https://github.com/turingschool","followers_url":"https://api.github.com/users/turingschool/followers","following_url":"https://api.github.com/users/turingschool/following{/other_user}","gists_url":"https://api.github.com/users/turingschool/gists{/gist_id}","starred_url":"https://api.github.com/users/turingschool/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/turingschool/subscriptions","organizations_url":"https://api.github.com/users/turingschool/orgs","repos_url":"https://api.github.com/users/turingschool/repos","events_url":"https://api.github.com/users/turingschool/events{/privacy}","received_events_url":"https://api.github.com/users/turingschool/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/turingschool/ruby-submissions","description":"Repo
+        for tracking submitted assignments in the BEE program","fork":false,"url":"https://api.github.com/repos/turingschool/ruby-submissions","forks_url":"https://api.github.com/repos/turingschool/ruby-submissions/forks","keys_url":"https://api.github.com/repos/turingschool/ruby-submissions/keys{/key_id}","collaborators_url":"https://api.github.com/repos/turingschool/ruby-submissions/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/turingschool/ruby-submissions/teams","hooks_url":"https://api.github.com/repos/turingschool/ruby-submissions/hooks","issue_events_url":"https://api.github.com/repos/turingschool/ruby-submissions/issues/events{/number}","events_url":"https://api.github.com/repos/turingschool/ruby-submissions/events","assignees_url":"https://api.github.com/repos/turingschool/ruby-submissions/assignees{/user}","branches_url":"https://api.github.com/repos/turingschool/ruby-submissions/branches{/branch}","tags_url":"https://api.github.com/repos/turingschool/ruby-submissions/tags","blobs_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/refs{/sha}","trees_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/trees{/sha}","statuses_url":"https://api.github.com/repos/turingschool/ruby-submissions/statuses/{sha}","languages_url":"https://api.github.com/repos/turingschool/ruby-submissions/languages","stargazers_url":"https://api.github.com/repos/turingschool/ruby-submissions/stargazers","contributors_url":"https://api.github.com/repos/turingschool/ruby-submissions/contributors","subscribers_url":"https://api.github.com/repos/turingschool/ruby-submissions/subscribers","subscription_url":"https://api.github.com/repos/turingschool/ruby-submissions/subscription","commits_url":"https://api.github.com/repos/turingschool/ruby-submissions/commits{/sha}","git_commits_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/commits{/sha}","comments_url":"https://api.github.com/repos/turingschool/ruby-submissions/comments{/number}","issue_comment_url":"https://api.github.com/repos/turingschool/ruby-submissions/issues/comments{/number}","contents_url":"https://api.github.com/repos/turingschool/ruby-submissions/contents/{+path}","compare_url":"https://api.github.com/repos/turingschool/ruby-submissions/compare/{base}...{head}","merges_url":"https://api.github.com/repos/turingschool/ruby-submissions/merges","archive_url":"https://api.github.com/repos/turingschool/ruby-submissions/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/turingschool/ruby-submissions/downloads","issues_url":"https://api.github.com/repos/turingschool/ruby-submissions/issues{/number}","pulls_url":"https://api.github.com/repos/turingschool/ruby-submissions/pulls{/number}","milestones_url":"https://api.github.com/repos/turingschool/ruby-submissions/milestones{/number}","notifications_url":"https://api.github.com/repos/turingschool/ruby-submissions/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/turingschool/ruby-submissions/labels{/name}","releases_url":"https://api.github.com/repos/turingschool/ruby-submissions/releases{/id}","deployments_url":"https://api.github.com/repos/turingschool/ruby-submissions/deployments","created_at":"2014-06-19T14:09:44Z","updated_at":"2017-10-27T13:57:39Z","pushed_at":"2018-01-31T20:38:14Z","git_url":"git://github.com/turingschool/ruby-submissions.git","ssh_url":"git@github.com:turingschool/ruby-submissions.git","clone_url":"https://github.com/turingschool/ruby-submissions.git","svn_url":"https://github.com/turingschool/ruby-submissions","homepage":"","size":112153,"stargazers_count":9,"watchers_count":9,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":385,"mirror_url":null,"archived":false,"open_issues_count":0,"license":null,"forks":385,"open_issues":0,"watchers":9,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":28755565,"name":"Dominion","full_name":"RussellFamily/Dominion","owner":{"login":"RussellFamily","id":10384002,"avatar_url":"https://avatars2.githubusercontent.com/u/10384002?v=4","gravatar_id":"","url":"https://api.github.com/users/RussellFamily","html_url":"https://github.com/RussellFamily","followers_url":"https://api.github.com/users/RussellFamily/followers","following_url":"https://api.github.com/users/RussellFamily/following{/other_user}","gists_url":"https://api.github.com/users/RussellFamily/gists{/gist_id}","starred_url":"https://api.github.com/users/RussellFamily/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/RussellFamily/subscriptions","organizations_url":"https://api.github.com/users/RussellFamily/orgs","repos_url":"https://api.github.com/users/RussellFamily/repos","events_url":"https://api.github.com/users/RussellFamily/events{/privacy}","received_events_url":"https://api.github.com/users/RussellFamily/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/RussellFamily/Dominion","description":null,"fork":false,"url":"https://api.github.com/repos/RussellFamily/Dominion","forks_url":"https://api.github.com/repos/RussellFamily/Dominion/forks","keys_url":"https://api.github.com/repos/RussellFamily/Dominion/keys{/key_id}","collaborators_url":"https://api.github.com/repos/RussellFamily/Dominion/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/RussellFamily/Dominion/teams","hooks_url":"https://api.github.com/repos/RussellFamily/Dominion/hooks","issue_events_url":"https://api.github.com/repos/RussellFamily/Dominion/issues/events{/number}","events_url":"https://api.github.com/repos/RussellFamily/Dominion/events","assignees_url":"https://api.github.com/repos/RussellFamily/Dominion/assignees{/user}","branches_url":"https://api.github.com/repos/RussellFamily/Dominion/branches{/branch}","tags_url":"https://api.github.com/repos/RussellFamily/Dominion/tags","blobs_url":"https://api.github.com/repos/RussellFamily/Dominion/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/RussellFamily/Dominion/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/RussellFamily/Dominion/git/refs{/sha}","trees_url":"https://api.github.com/repos/RussellFamily/Dominion/git/trees{/sha}","statuses_url":"https://api.github.com/repos/RussellFamily/Dominion/statuses/{sha}","languages_url":"https://api.github.com/repos/RussellFamily/Dominion/languages","stargazers_url":"https://api.github.com/repos/RussellFamily/Dominion/stargazers","contributors_url":"https://api.github.com/repos/RussellFamily/Dominion/contributors","subscribers_url":"https://api.github.com/repos/RussellFamily/Dominion/subscribers","subscription_url":"https://api.github.com/repos/RussellFamily/Dominion/subscription","commits_url":"https://api.github.com/repos/RussellFamily/Dominion/commits{/sha}","git_commits_url":"https://api.github.com/repos/RussellFamily/Dominion/git/commits{/sha}","comments_url":"https://api.github.com/repos/RussellFamily/Dominion/comments{/number}","issue_comment_url":"https://api.github.com/repos/RussellFamily/Dominion/issues/comments{/number}","contents_url":"https://api.github.com/repos/RussellFamily/Dominion/contents/{+path}","compare_url":"https://api.github.com/repos/RussellFamily/Dominion/compare/{base}...{head}","merges_url":"https://api.github.com/repos/RussellFamily/Dominion/merges","archive_url":"https://api.github.com/repos/RussellFamily/Dominion/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/RussellFamily/Dominion/downloads","issues_url":"https://api.github.com/repos/RussellFamily/Dominion/issues{/number}","pulls_url":"https://api.github.com/repos/RussellFamily/Dominion/pulls{/number}","milestones_url":"https://api.github.com/repos/RussellFamily/Dominion/milestones{/number}","notifications_url":"https://api.github.com/repos/RussellFamily/Dominion/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/RussellFamily/Dominion/labels{/name}","releases_url":"https://api.github.com/repos/RussellFamily/Dominion/releases{/id}","deployments_url":"https://api.github.com/repos/RussellFamily/Dominion/deployments","created_at":"2015-01-03T21:48:35Z","updated_at":"2017-07-18T16:24:12Z","pushed_at":"2016-11-30T05:53:08Z","git_url":"git://github.com/RussellFamily/Dominion.git","ssh_url":"git@github.com:RussellFamily/Dominion.git","clone_url":"https://github.com/RussellFamily/Dominion.git","svn_url":"https://github.com/RussellFamily/Dominion","homepage":null,"size":13322,"stargazers_count":3,"watchers_count":3,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":3,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":96861698,"name":"cardgame_21","full_name":"noah-dev/cardgame_21","owner":{"login":"noah-dev","id":29388801,"avatar_url":"https://avatars3.githubusercontent.com/u/29388801?v=4","gravatar_id":"","url":"https://api.github.com/users/noah-dev","html_url":"https://github.com/noah-dev","followers_url":"https://api.github.com/users/noah-dev/followers","following_url":"https://api.github.com/users/noah-dev/following{/other_user}","gists_url":"https://api.github.com/users/noah-dev/gists{/gist_id}","starred_url":"https://api.github.com/users/noah-dev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/noah-dev/subscriptions","organizations_url":"https://api.github.com/users/noah-dev/orgs","repos_url":"https://api.github.com/users/noah-dev/repos","events_url":"https://api.github.com/users/noah-dev/events{/privacy}","received_events_url":"https://api.github.com/users/noah-dev/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/noah-dev/cardgame_21","description":"My
+        OOP practice with python","fork":false,"url":"https://api.github.com/repos/noah-dev/cardgame_21","forks_url":"https://api.github.com/repos/noah-dev/cardgame_21/forks","keys_url":"https://api.github.com/repos/noah-dev/cardgame_21/keys{/key_id}","collaborators_url":"https://api.github.com/repos/noah-dev/cardgame_21/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/noah-dev/cardgame_21/teams","hooks_url":"https://api.github.com/repos/noah-dev/cardgame_21/hooks","issue_events_url":"https://api.github.com/repos/noah-dev/cardgame_21/issues/events{/number}","events_url":"https://api.github.com/repos/noah-dev/cardgame_21/events","assignees_url":"https://api.github.com/repos/noah-dev/cardgame_21/assignees{/user}","branches_url":"https://api.github.com/repos/noah-dev/cardgame_21/branches{/branch}","tags_url":"https://api.github.com/repos/noah-dev/cardgame_21/tags","blobs_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/refs{/sha}","trees_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/trees{/sha}","statuses_url":"https://api.github.com/repos/noah-dev/cardgame_21/statuses/{sha}","languages_url":"https://api.github.com/repos/noah-dev/cardgame_21/languages","stargazers_url":"https://api.github.com/repos/noah-dev/cardgame_21/stargazers","contributors_url":"https://api.github.com/repos/noah-dev/cardgame_21/contributors","subscribers_url":"https://api.github.com/repos/noah-dev/cardgame_21/subscribers","subscription_url":"https://api.github.com/repos/noah-dev/cardgame_21/subscription","commits_url":"https://api.github.com/repos/noah-dev/cardgame_21/commits{/sha}","git_commits_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/commits{/sha}","comments_url":"https://api.github.com/repos/noah-dev/cardgame_21/comments{/number}","issue_comment_url":"https://api.github.com/repos/noah-dev/cardgame_21/issues/comments{/number}","contents_url":"https://api.github.com/repos/noah-dev/cardgame_21/contents/{+path}","compare_url":"https://api.github.com/repos/noah-dev/cardgame_21/compare/{base}...{head}","merges_url":"https://api.github.com/repos/noah-dev/cardgame_21/merges","archive_url":"https://api.github.com/repos/noah-dev/cardgame_21/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/noah-dev/cardgame_21/downloads","issues_url":"https://api.github.com/repos/noah-dev/cardgame_21/issues{/number}","pulls_url":"https://api.github.com/repos/noah-dev/cardgame_21/pulls{/number}","milestones_url":"https://api.github.com/repos/noah-dev/cardgame_21/milestones{/number}","notifications_url":"https://api.github.com/repos/noah-dev/cardgame_21/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/noah-dev/cardgame_21/labels{/name}","releases_url":"https://api.github.com/repos/noah-dev/cardgame_21/releases{/id}","deployments_url":"https://api.github.com/repos/noah-dev/cardgame_21/deployments","created_at":"2017-07-11T07:02:03Z","updated_at":"2017-07-17T22:28:47Z","pushed_at":"2017-07-19T06:15:00Z","git_url":"git://github.com/noah-dev/cardgame_21.git","ssh_url":"git@github.com:noah-dev/cardgame_21.git","clone_url":"https://github.com/noah-dev/cardgame_21.git","svn_url":"https://github.com/noah-dev/cardgame_21","homepage":null,"size":161,"stargazers_count":1,"watchers_count":1,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":1,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":1385122,"name":"matplotlib","full_name":"matplotlib/matplotlib","owner":{"login":"matplotlib","id":215947,"avatar_url":"https://avatars0.githubusercontent.com/u/215947?v=4","gravatar_id":"","url":"https://api.github.com/users/matplotlib","html_url":"https://github.com/matplotlib","followers_url":"https://api.github.com/users/matplotlib/followers","following_url":"https://api.github.com/users/matplotlib/following{/other_user}","gists_url":"https://api.github.com/users/matplotlib/gists{/gist_id}","starred_url":"https://api.github.com/users/matplotlib/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/matplotlib/subscriptions","organizations_url":"https://api.github.com/users/matplotlib/orgs","repos_url":"https://api.github.com/users/matplotlib/repos","events_url":"https://api.github.com/users/matplotlib/events{/privacy}","received_events_url":"https://api.github.com/users/matplotlib/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/matplotlib/matplotlib","description":"matplotlib:
+        plotting with Python","fork":false,"url":"https://api.github.com/repos/matplotlib/matplotlib","forks_url":"https://api.github.com/repos/matplotlib/matplotlib/forks","keys_url":"https://api.github.com/repos/matplotlib/matplotlib/keys{/key_id}","collaborators_url":"https://api.github.com/repos/matplotlib/matplotlib/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/matplotlib/matplotlib/teams","hooks_url":"https://api.github.com/repos/matplotlib/matplotlib/hooks","issue_events_url":"https://api.github.com/repos/matplotlib/matplotlib/issues/events{/number}","events_url":"https://api.github.com/repos/matplotlib/matplotlib/events","assignees_url":"https://api.github.com/repos/matplotlib/matplotlib/assignees{/user}","branches_url":"https://api.github.com/repos/matplotlib/matplotlib/branches{/branch}","tags_url":"https://api.github.com/repos/matplotlib/matplotlib/tags","blobs_url":"https://api.github.com/repos/matplotlib/matplotlib/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/matplotlib/matplotlib/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/matplotlib/matplotlib/git/refs{/sha}","trees_url":"https://api.github.com/repos/matplotlib/matplotlib/git/trees{/sha}","statuses_url":"https://api.github.com/repos/matplotlib/matplotlib/statuses/{sha}","languages_url":"https://api.github.com/repos/matplotlib/matplotlib/languages","stargazers_url":"https://api.github.com/repos/matplotlib/matplotlib/stargazers","contributors_url":"https://api.github.com/repos/matplotlib/matplotlib/contributors","subscribers_url":"https://api.github.com/repos/matplotlib/matplotlib/subscribers","subscription_url":"https://api.github.com/repos/matplotlib/matplotlib/subscription","commits_url":"https://api.github.com/repos/matplotlib/matplotlib/commits{/sha}","git_commits_url":"https://api.github.com/repos/matplotlib/matplotlib/git/commits{/sha}","comments_url":"https://api.github.com/repos/matplotlib/matplotlib/comments{/number}","issue_comment_url":"https://api.github.com/repos/matplotlib/matplotlib/issues/comments{/number}","contents_url":"https://api.github.com/repos/matplotlib/matplotlib/contents/{+path}","compare_url":"https://api.github.com/repos/matplotlib/matplotlib/compare/{base}...{head}","merges_url":"https://api.github.com/repos/matplotlib/matplotlib/merges","archive_url":"https://api.github.com/repos/matplotlib/matplotlib/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/matplotlib/matplotlib/downloads","issues_url":"https://api.github.com/repos/matplotlib/matplotlib/issues{/number}","pulls_url":"https://api.github.com/repos/matplotlib/matplotlib/pulls{/number}","milestones_url":"https://api.github.com/repos/matplotlib/matplotlib/milestones{/number}","notifications_url":"https://api.github.com/repos/matplotlib/matplotlib/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/matplotlib/matplotlib/labels{/name}","releases_url":"https://api.github.com/repos/matplotlib/matplotlib/releases{/id}","deployments_url":"https://api.github.com/repos/matplotlib/matplotlib/deployments","created_at":"2011-02-19T03:17:12Z","updated_at":"2018-01-31T18:51:29Z","pushed_at":"2018-01-31T21:24:08Z","git_url":"git://github.com/matplotlib/matplotlib.git","ssh_url":"git@github.com:matplotlib/matplotlib.git","clone_url":"https://github.com/matplotlib/matplotlib.git","svn_url":"https://github.com/matplotlib/matplotlib","homepage":"http://matplotlib.org/","size":320842,"stargazers_count":6689,"watchers_count":6689,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":3143,"mirror_url":null,"archived":false,"open_issues_count":1349,"license":null,"forks":3143,"open_issues":1349,"watchers":6689,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":843222,"name":"scikit-learn","full_name":"scikit-learn/scikit-learn","owner":{"login":"scikit-learn","id":365630,"avatar_url":"https://avatars2.githubusercontent.com/u/365630?v=4","gravatar_id":"","url":"https://api.github.com/users/scikit-learn","html_url":"https://github.com/scikit-learn","followers_url":"https://api.github.com/users/scikit-learn/followers","following_url":"https://api.github.com/users/scikit-learn/following{/other_user}","gists_url":"https://api.github.com/users/scikit-learn/gists{/gist_id}","starred_url":"https://api.github.com/users/scikit-learn/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/scikit-learn/subscriptions","organizations_url":"https://api.github.com/users/scikit-learn/orgs","repos_url":"https://api.github.com/users/scikit-learn/repos","events_url":"https://api.github.com/users/scikit-learn/events{/privacy}","received_events_url":"https://api.github.com/users/scikit-learn/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/scikit-learn/scikit-learn","description":"scikit-learn:
+        machine learning in Python","fork":false,"url":"https://api.github.com/repos/scikit-learn/scikit-learn","forks_url":"https://api.github.com/repos/scikit-learn/scikit-learn/forks","keys_url":"https://api.github.com/repos/scikit-learn/scikit-learn/keys{/key_id}","collaborators_url":"https://api.github.com/repos/scikit-learn/scikit-learn/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/scikit-learn/scikit-learn/teams","hooks_url":"https://api.github.com/repos/scikit-learn/scikit-learn/hooks","issue_events_url":"https://api.github.com/repos/scikit-learn/scikit-learn/issues/events{/number}","events_url":"https://api.github.com/repos/scikit-learn/scikit-learn/events","assignees_url":"https://api.github.com/repos/scikit-learn/scikit-learn/assignees{/user}","branches_url":"https://api.github.com/repos/scikit-learn/scikit-learn/branches{/branch}","tags_url":"https://api.github.com/repos/scikit-learn/scikit-learn/tags","blobs_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/refs{/sha}","trees_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/trees{/sha}","statuses_url":"https://api.github.com/repos/scikit-learn/scikit-learn/statuses/{sha}","languages_url":"https://api.github.com/repos/scikit-learn/scikit-learn/languages","stargazers_url":"https://api.github.com/repos/scikit-learn/scikit-learn/stargazers","contributors_url":"https://api.github.com/repos/scikit-learn/scikit-learn/contributors","subscribers_url":"https://api.github.com/repos/scikit-learn/scikit-learn/subscribers","subscription_url":"https://api.github.com/repos/scikit-learn/scikit-learn/subscription","commits_url":"https://api.github.com/repos/scikit-learn/scikit-learn/commits{/sha}","git_commits_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/commits{/sha}","comments_url":"https://api.github.com/repos/scikit-learn/scikit-learn/comments{/number}","issue_comment_url":"https://api.github.com/repos/scikit-learn/scikit-learn/issues/comments{/number}","contents_url":"https://api.github.com/repos/scikit-learn/scikit-learn/contents/{+path}","compare_url":"https://api.github.com/repos/scikit-learn/scikit-learn/compare/{base}...{head}","merges_url":"https://api.github.com/repos/scikit-learn/scikit-learn/merges","archive_url":"https://api.github.com/repos/scikit-learn/scikit-learn/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/scikit-learn/scikit-learn/downloads","issues_url":"https://api.github.com/repos/scikit-learn/scikit-learn/issues{/number}","pulls_url":"https://api.github.com/repos/scikit-learn/scikit-learn/pulls{/number}","milestones_url":"https://api.github.com/repos/scikit-learn/scikit-learn/milestones{/number}","notifications_url":"https://api.github.com/repos/scikit-learn/scikit-learn/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/scikit-learn/scikit-learn/labels{/name}","releases_url":"https://api.github.com/repos/scikit-learn/scikit-learn/releases{/id}","deployments_url":"https://api.github.com/repos/scikit-learn/scikit-learn/deployments","created_at":"2010-08-17T09:43:38Z","updated_at":"2018-01-31T20:28:01Z","pushed_at":"2018-01-31T21:04:25Z","git_url":"git://github.com/scikit-learn/scikit-learn.git","ssh_url":"git@github.com:scikit-learn/scikit-learn.git","clone_url":"https://github.com/scikit-learn/scikit-learn.git","svn_url":"https://github.com/scikit-learn/scikit-learn","homepage":"http://scikit-learn.org","size":88662,"stargazers_count":25304,"watchers_count":25304,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":12920,"mirror_url":null,"archived":false,"open_issues_count":1556,"license":{"key":"other","name":"Other","spdx_id":null,"url":null},"forks":12920,"open_issues":1556,"watchers":25304,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":858127,"name":"pandas","full_name":"pandas-dev/pandas","owner":{"login":"pandas-dev","id":21206976,"avatar_url":"https://avatars2.githubusercontent.com/u/21206976?v=4","gravatar_id":"","url":"https://api.github.com/users/pandas-dev","html_url":"https://github.com/pandas-dev","followers_url":"https://api.github.com/users/pandas-dev/followers","following_url":"https://api.github.com/users/pandas-dev/following{/other_user}","gists_url":"https://api.github.com/users/pandas-dev/gists{/gist_id}","starred_url":"https://api.github.com/users/pandas-dev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pandas-dev/subscriptions","organizations_url":"https://api.github.com/users/pandas-dev/orgs","repos_url":"https://api.github.com/users/pandas-dev/repos","events_url":"https://api.github.com/users/pandas-dev/events{/privacy}","received_events_url":"https://api.github.com/users/pandas-dev/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/pandas-dev/pandas","description":"Flexible
+        and powerful data analysis / manipulation library for Python, providing labeled
+        data structures similar to R data.frame objects, statistical functions, and
+        much more","fork":false,"url":"https://api.github.com/repos/pandas-dev/pandas","forks_url":"https://api.github.com/repos/pandas-dev/pandas/forks","keys_url":"https://api.github.com/repos/pandas-dev/pandas/keys{/key_id}","collaborators_url":"https://api.github.com/repos/pandas-dev/pandas/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/pandas-dev/pandas/teams","hooks_url":"https://api.github.com/repos/pandas-dev/pandas/hooks","issue_events_url":"https://api.github.com/repos/pandas-dev/pandas/issues/events{/number}","events_url":"https://api.github.com/repos/pandas-dev/pandas/events","assignees_url":"https://api.github.com/repos/pandas-dev/pandas/assignees{/user}","branches_url":"https://api.github.com/repos/pandas-dev/pandas/branches{/branch}","tags_url":"https://api.github.com/repos/pandas-dev/pandas/tags","blobs_url":"https://api.github.com/repos/pandas-dev/pandas/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/pandas-dev/pandas/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/pandas-dev/pandas/git/refs{/sha}","trees_url":"https://api.github.com/repos/pandas-dev/pandas/git/trees{/sha}","statuses_url":"https://api.github.com/repos/pandas-dev/pandas/statuses/{sha}","languages_url":"https://api.github.com/repos/pandas-dev/pandas/languages","stargazers_url":"https://api.github.com/repos/pandas-dev/pandas/stargazers","contributors_url":"https://api.github.com/repos/pandas-dev/pandas/contributors","subscribers_url":"https://api.github.com/repos/pandas-dev/pandas/subscribers","subscription_url":"https://api.github.com/repos/pandas-dev/pandas/subscription","commits_url":"https://api.github.com/repos/pandas-dev/pandas/commits{/sha}","git_commits_url":"https://api.github.com/repos/pandas-dev/pandas/git/commits{/sha}","comments_url":"https://api.github.com/repos/pandas-dev/pandas/comments{/number}","issue_comment_url":"https://api.github.com/repos/pandas-dev/pandas/issues/comments{/number}","contents_url":"https://api.github.com/repos/pandas-dev/pandas/contents/{+path}","compare_url":"https://api.github.com/repos/pandas-dev/pandas/compare/{base}...{head}","merges_url":"https://api.github.com/repos/pandas-dev/pandas/merges","archive_url":"https://api.github.com/repos/pandas-dev/pandas/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/pandas-dev/pandas/downloads","issues_url":"https://api.github.com/repos/pandas-dev/pandas/issues{/number}","pulls_url":"https://api.github.com/repos/pandas-dev/pandas/pulls{/number}","milestones_url":"https://api.github.com/repos/pandas-dev/pandas/milestones{/number}","notifications_url":"https://api.github.com/repos/pandas-dev/pandas/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/pandas-dev/pandas/labels{/name}","releases_url":"https://api.github.com/repos/pandas-dev/pandas/releases{/id}","deployments_url":"https://api.github.com/repos/pandas-dev/pandas/deployments","created_at":"2010-08-24T01:37:33Z","updated_at":"2018-01-31T21:17:32Z","pushed_at":"2018-01-31T20:58:15Z","git_url":"git://github.com/pandas-dev/pandas.git","ssh_url":"git@github.com:pandas-dev/pandas.git","clone_url":"https://github.com/pandas-dev/pandas.git","svn_url":"https://github.com/pandas-dev/pandas","homepage":"http://pandas.pydata.org","size":115362,"stargazers_count":12711,"watchers_count":12711,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":true,"forks_count":4933,"mirror_url":null,"archived":false,"open_issues_count":2318,"license":{"key":"bsd-3-clause","name":"BSD
+        3-Clause \"New\" or \"Revised\" License","spdx_id":"BSD-3-Clause","url":"https://api.github.com/licenses/bsd-3-clause"},"forks":4933,"open_issues":2318,"watchers":12711,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}}]'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:23 GMT
+- request:
+    method: get
+    uri: https://api.github.com/user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4953'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"4f3450db98532514705ce40f0ef87aa7"
+      Last-Modified:
+      - Tue, 30 Jan 2018 18:50:07 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.039271'
+      X-Github-Request-Id:
+      - C831:0B61:A23754:165B337:5A7239E3
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"Maxscores","id":29938166,"avatar_url":"https://avatars1.githubusercontent.com/u/29938166?v=4","gravatar_id":"","url":"https://api.github.com/users/Maxscores","html_url":"https://github.com/Maxscores","followers_url":"https://api.github.com/users/Maxscores/followers","following_url":"https://api.github.com/users/Maxscores/following{/other_user}","gists_url":"https://api.github.com/users/Maxscores/gists{/gist_id}","starred_url":"https://api.github.com/users/Maxscores/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Maxscores/subscriptions","organizations_url":"https://api.github.com/users/Maxscores/orgs","repos_url":"https://api.github.com/users/Maxscores/repos","events_url":"https://api.github.com/users/Maxscores/events{/privacy}","received_events_url":"https://api.github.com/users/Maxscores/received_events","type":"User","site_admin":false,"name":"Max
+        Stackhouse","company":"@turingschool","blog":"https://medium.com/@maxstackhouse","location":"Colorado","email":"maxstackhouse@gmail.com","hireable":true,"bio":"@turingschool
+        - Student(Backend Software Development)\r\n\r\n@ColoradoSchoolofMines - B.S.
+        Metallurgical and Materials Engineering ","public_repos":28,"public_gists":18,"followers":4,"following":8,"created_at":"2017-07-06T03:55:31Z","updated_at":"2018-01-30T18:50:07Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:23 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/Maxscores/starred
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4952'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"01932982500fbfa658c06dce62c7962d"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.140666'
+      X-Github-Request-Id:
+      - C832:0B5F:742F6E:10E54F1:5A7239E3
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":52239948,"name":"Pain-Caver","full_name":"stevepentler/Pain-Caver","owner":{"login":"stevepentler","id":13510375,"avatar_url":"https://avatars0.githubusercontent.com/u/13510375?v=4","gravatar_id":"","url":"https://api.github.com/users/stevepentler","html_url":"https://github.com/stevepentler","followers_url":"https://api.github.com/users/stevepentler/followers","following_url":"https://api.github.com/users/stevepentler/following{/other_user}","gists_url":"https://api.github.com/users/stevepentler/gists{/gist_id}","starred_url":"https://api.github.com/users/stevepentler/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/stevepentler/subscriptions","organizations_url":"https://api.github.com/users/stevepentler/orgs","repos_url":"https://api.github.com/users/stevepentler/repos","events_url":"https://api.github.com/users/stevepentler/events{/privacy}","received_events_url":"https://api.github.com/users/stevepentler/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/stevepentler/Pain-Caver","description":"Strava
+        Workout Comparisons in Rails","fork":false,"url":"https://api.github.com/repos/stevepentler/Pain-Caver","forks_url":"https://api.github.com/repos/stevepentler/Pain-Caver/forks","keys_url":"https://api.github.com/repos/stevepentler/Pain-Caver/keys{/key_id}","collaborators_url":"https://api.github.com/repos/stevepentler/Pain-Caver/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/stevepentler/Pain-Caver/teams","hooks_url":"https://api.github.com/repos/stevepentler/Pain-Caver/hooks","issue_events_url":"https://api.github.com/repos/stevepentler/Pain-Caver/issues/events{/number}","events_url":"https://api.github.com/repos/stevepentler/Pain-Caver/events","assignees_url":"https://api.github.com/repos/stevepentler/Pain-Caver/assignees{/user}","branches_url":"https://api.github.com/repos/stevepentler/Pain-Caver/branches{/branch}","tags_url":"https://api.github.com/repos/stevepentler/Pain-Caver/tags","blobs_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/refs{/sha}","trees_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/trees{/sha}","statuses_url":"https://api.github.com/repos/stevepentler/Pain-Caver/statuses/{sha}","languages_url":"https://api.github.com/repos/stevepentler/Pain-Caver/languages","stargazers_url":"https://api.github.com/repos/stevepentler/Pain-Caver/stargazers","contributors_url":"https://api.github.com/repos/stevepentler/Pain-Caver/contributors","subscribers_url":"https://api.github.com/repos/stevepentler/Pain-Caver/subscribers","subscription_url":"https://api.github.com/repos/stevepentler/Pain-Caver/subscription","commits_url":"https://api.github.com/repos/stevepentler/Pain-Caver/commits{/sha}","git_commits_url":"https://api.github.com/repos/stevepentler/Pain-Caver/git/commits{/sha}","comments_url":"https://api.github.com/repos/stevepentler/Pain-Caver/comments{/number}","issue_comment_url":"https://api.github.com/repos/stevepentler/Pain-Caver/issues/comments{/number}","contents_url":"https://api.github.com/repos/stevepentler/Pain-Caver/contents/{+path}","compare_url":"https://api.github.com/repos/stevepentler/Pain-Caver/compare/{base}...{head}","merges_url":"https://api.github.com/repos/stevepentler/Pain-Caver/merges","archive_url":"https://api.github.com/repos/stevepentler/Pain-Caver/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/stevepentler/Pain-Caver/downloads","issues_url":"https://api.github.com/repos/stevepentler/Pain-Caver/issues{/number}","pulls_url":"https://api.github.com/repos/stevepentler/Pain-Caver/pulls{/number}","milestones_url":"https://api.github.com/repos/stevepentler/Pain-Caver/milestones{/number}","notifications_url":"https://api.github.com/repos/stevepentler/Pain-Caver/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/stevepentler/Pain-Caver/labels{/name}","releases_url":"https://api.github.com/repos/stevepentler/Pain-Caver/releases{/id}","deployments_url":"https://api.github.com/repos/stevepentler/Pain-Caver/deployments","created_at":"2016-02-22T02:05:15Z","updated_at":"2017-12-27T21:03:28Z","pushed_at":"2016-07-09T17:43:41Z","git_url":"git://github.com/stevepentler/Pain-Caver.git","ssh_url":"git@github.com:stevepentler/Pain-Caver.git","clone_url":"https://github.com/stevepentler/Pain-Caver.git","svn_url":"https://github.com/stevepentler/Pain-Caver","homepage":"https://paincaver-app.herokuapp.com/","size":10294,"stargazers_count":7,"watchers_count":7,"language":"JavaScript","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":1,"mirror_url":null,"archived":false,"open_issues_count":6,"license":null,"forks":1,"open_issues":6,"watchers":7,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":35051839,"name":"connectiq-apps","full_name":"garmin/connectiq-apps","owner":{"login":"garmin","id":8899972,"avatar_url":"https://avatars1.githubusercontent.com/u/8899972?v=4","gravatar_id":"","url":"https://api.github.com/users/garmin","html_url":"https://github.com/garmin","followers_url":"https://api.github.com/users/garmin/followers","following_url":"https://api.github.com/users/garmin/following{/other_user}","gists_url":"https://api.github.com/users/garmin/gists{/gist_id}","starred_url":"https://api.github.com/users/garmin/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/garmin/subscriptions","organizations_url":"https://api.github.com/users/garmin/orgs","repos_url":"https://api.github.com/users/garmin/repos","events_url":"https://api.github.com/users/garmin/events{/privacy}","received_events_url":"https://api.github.com/users/garmin/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/garmin/connectiq-apps","description":"A
+        collection of Connect IQ apps.","fork":false,"url":"https://api.github.com/repos/garmin/connectiq-apps","forks_url":"https://api.github.com/repos/garmin/connectiq-apps/forks","keys_url":"https://api.github.com/repos/garmin/connectiq-apps/keys{/key_id}","collaborators_url":"https://api.github.com/repos/garmin/connectiq-apps/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/garmin/connectiq-apps/teams","hooks_url":"https://api.github.com/repos/garmin/connectiq-apps/hooks","issue_events_url":"https://api.github.com/repos/garmin/connectiq-apps/issues/events{/number}","events_url":"https://api.github.com/repos/garmin/connectiq-apps/events","assignees_url":"https://api.github.com/repos/garmin/connectiq-apps/assignees{/user}","branches_url":"https://api.github.com/repos/garmin/connectiq-apps/branches{/branch}","tags_url":"https://api.github.com/repos/garmin/connectiq-apps/tags","blobs_url":"https://api.github.com/repos/garmin/connectiq-apps/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/garmin/connectiq-apps/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/garmin/connectiq-apps/git/refs{/sha}","trees_url":"https://api.github.com/repos/garmin/connectiq-apps/git/trees{/sha}","statuses_url":"https://api.github.com/repos/garmin/connectiq-apps/statuses/{sha}","languages_url":"https://api.github.com/repos/garmin/connectiq-apps/languages","stargazers_url":"https://api.github.com/repos/garmin/connectiq-apps/stargazers","contributors_url":"https://api.github.com/repos/garmin/connectiq-apps/contributors","subscribers_url":"https://api.github.com/repos/garmin/connectiq-apps/subscribers","subscription_url":"https://api.github.com/repos/garmin/connectiq-apps/subscription","commits_url":"https://api.github.com/repos/garmin/connectiq-apps/commits{/sha}","git_commits_url":"https://api.github.com/repos/garmin/connectiq-apps/git/commits{/sha}","comments_url":"https://api.github.com/repos/garmin/connectiq-apps/comments{/number}","issue_comment_url":"https://api.github.com/repos/garmin/connectiq-apps/issues/comments{/number}","contents_url":"https://api.github.com/repos/garmin/connectiq-apps/contents/{+path}","compare_url":"https://api.github.com/repos/garmin/connectiq-apps/compare/{base}...{head}","merges_url":"https://api.github.com/repos/garmin/connectiq-apps/merges","archive_url":"https://api.github.com/repos/garmin/connectiq-apps/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/garmin/connectiq-apps/downloads","issues_url":"https://api.github.com/repos/garmin/connectiq-apps/issues{/number}","pulls_url":"https://api.github.com/repos/garmin/connectiq-apps/pulls{/number}","milestones_url":"https://api.github.com/repos/garmin/connectiq-apps/milestones{/number}","notifications_url":"https://api.github.com/repos/garmin/connectiq-apps/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/garmin/connectiq-apps/labels{/name}","releases_url":"https://api.github.com/repos/garmin/connectiq-apps/releases{/id}","deployments_url":"https://api.github.com/repos/garmin/connectiq-apps/deployments","created_at":"2015-05-04T18:27:13Z","updated_at":"2018-01-26T20:33:28Z","pushed_at":"2018-01-02T13:36:08Z","git_url":"git://github.com/garmin/connectiq-apps.git","ssh_url":"git@github.com:garmin/connectiq-apps.git","clone_url":"https://github.com/garmin/connectiq-apps.git","svn_url":"https://github.com/garmin/connectiq-apps","homepage":null,"size":2477,"stargazers_count":101,"watchers_count":101,"language":"Java","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":46,"mirror_url":null,"archived":false,"open_issues_count":3,"license":{"key":"apache-2.0","name":"Apache
+        License 2.0","spdx_id":"Apache-2.0","url":"https://api.github.com/licenses/apache-2.0"},"forks":46,"open_issues":3,"watchers":101,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":15799406,"name":"strava-api-v3","full_name":"jaredholdcroft/strava-api-v3","owner":{"login":"jaredholdcroft","id":690391,"avatar_url":"https://avatars2.githubusercontent.com/u/690391?v=4","gravatar_id":"","url":"https://api.github.com/users/jaredholdcroft","html_url":"https://github.com/jaredholdcroft","followers_url":"https://api.github.com/users/jaredholdcroft/followers","following_url":"https://api.github.com/users/jaredholdcroft/following{/other_user}","gists_url":"https://api.github.com/users/jaredholdcroft/gists{/gist_id}","starred_url":"https://api.github.com/users/jaredholdcroft/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jaredholdcroft/subscriptions","organizations_url":"https://api.github.com/users/jaredholdcroft/orgs","repos_url":"https://api.github.com/users/jaredholdcroft/repos","events_url":"https://api.github.com/users/jaredholdcroft/events{/privacy}","received_events_url":"https://api.github.com/users/jaredholdcroft/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/jaredholdcroft/strava-api-v3","description":"Strava
+        API V3","fork":false,"url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3","forks_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/forks","keys_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/keys{/key_id}","collaborators_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/teams","hooks_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/hooks","issue_events_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/issues/events{/number}","events_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/events","assignees_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/assignees{/user}","branches_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/branches{/branch}","tags_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/tags","blobs_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/refs{/sha}","trees_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/trees{/sha}","statuses_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/statuses/{sha}","languages_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/languages","stargazers_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/stargazers","contributors_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/contributors","subscribers_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/subscribers","subscription_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/subscription","commits_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/commits{/sha}","git_commits_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/git/commits{/sha}","comments_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/comments{/number}","issue_comment_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/issues/comments{/number}","contents_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/contents/{+path}","compare_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/compare/{base}...{head}","merges_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/merges","archive_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/downloads","issues_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/issues{/number}","pulls_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/pulls{/number}","milestones_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/milestones{/number}","notifications_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/labels{/name}","releases_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/releases{/id}","deployments_url":"https://api.github.com/repos/jaredholdcroft/strava-api-v3/deployments","created_at":"2014-01-10T14:00:11Z","updated_at":"2017-12-14T04:36:03Z","pushed_at":"2017-05-31T11:59:50Z","git_url":"git://github.com/jaredholdcroft/strava-api-v3.git","ssh_url":"git@github.com:jaredholdcroft/strava-api-v3.git","clone_url":"https://github.com/jaredholdcroft/strava-api-v3.git","svn_url":"https://github.com/jaredholdcroft/strava-api-v3","homepage":null,"size":716,"stargazers_count":117,"watchers_count":117,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":true,"forks_count":44,"mirror_url":null,"archived":false,"open_issues_count":2,"license":{"key":"mit","name":"MIT
+        License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit"},"forks":44,"open_issues":2,"watchers":117,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":839336,"name":"simplecov","full_name":"colszowka/simplecov","owner":{"login":"colszowka","id":13972,"avatar_url":"https://avatars1.githubusercontent.com/u/13972?v=4","gravatar_id":"","url":"https://api.github.com/users/colszowka","html_url":"https://github.com/colszowka","followers_url":"https://api.github.com/users/colszowka/followers","following_url":"https://api.github.com/users/colszowka/following{/other_user}","gists_url":"https://api.github.com/users/colszowka/gists{/gist_id}","starred_url":"https://api.github.com/users/colszowka/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/colszowka/subscriptions","organizations_url":"https://api.github.com/users/colszowka/orgs","repos_url":"https://api.github.com/users/colszowka/repos","events_url":"https://api.github.com/users/colszowka/events{/privacy}","received_events_url":"https://api.github.com/users/colszowka/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/colszowka/simplecov","description":"Code
+        coverage for Ruby 1.9+ with a powerful configuration library and automatic
+        merging of coverage across test suites","fork":false,"url":"https://api.github.com/repos/colszowka/simplecov","forks_url":"https://api.github.com/repos/colszowka/simplecov/forks","keys_url":"https://api.github.com/repos/colszowka/simplecov/keys{/key_id}","collaborators_url":"https://api.github.com/repos/colszowka/simplecov/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/colszowka/simplecov/teams","hooks_url":"https://api.github.com/repos/colszowka/simplecov/hooks","issue_events_url":"https://api.github.com/repos/colszowka/simplecov/issues/events{/number}","events_url":"https://api.github.com/repos/colszowka/simplecov/events","assignees_url":"https://api.github.com/repos/colszowka/simplecov/assignees{/user}","branches_url":"https://api.github.com/repos/colszowka/simplecov/branches{/branch}","tags_url":"https://api.github.com/repos/colszowka/simplecov/tags","blobs_url":"https://api.github.com/repos/colszowka/simplecov/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/colszowka/simplecov/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/colszowka/simplecov/git/refs{/sha}","trees_url":"https://api.github.com/repos/colszowka/simplecov/git/trees{/sha}","statuses_url":"https://api.github.com/repos/colszowka/simplecov/statuses/{sha}","languages_url":"https://api.github.com/repos/colszowka/simplecov/languages","stargazers_url":"https://api.github.com/repos/colszowka/simplecov/stargazers","contributors_url":"https://api.github.com/repos/colszowka/simplecov/contributors","subscribers_url":"https://api.github.com/repos/colszowka/simplecov/subscribers","subscription_url":"https://api.github.com/repos/colszowka/simplecov/subscription","commits_url":"https://api.github.com/repos/colszowka/simplecov/commits{/sha}","git_commits_url":"https://api.github.com/repos/colszowka/simplecov/git/commits{/sha}","comments_url":"https://api.github.com/repos/colszowka/simplecov/comments{/number}","issue_comment_url":"https://api.github.com/repos/colszowka/simplecov/issues/comments{/number}","contents_url":"https://api.github.com/repos/colszowka/simplecov/contents/{+path}","compare_url":"https://api.github.com/repos/colszowka/simplecov/compare/{base}...{head}","merges_url":"https://api.github.com/repos/colszowka/simplecov/merges","archive_url":"https://api.github.com/repos/colszowka/simplecov/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/colszowka/simplecov/downloads","issues_url":"https://api.github.com/repos/colszowka/simplecov/issues{/number}","pulls_url":"https://api.github.com/repos/colszowka/simplecov/pulls{/number}","milestones_url":"https://api.github.com/repos/colszowka/simplecov/milestones{/number}","notifications_url":"https://api.github.com/repos/colszowka/simplecov/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/colszowka/simplecov/labels{/name}","releases_url":"https://api.github.com/repos/colszowka/simplecov/releases{/id}","deployments_url":"https://api.github.com/repos/colszowka/simplecov/deployments","created_at":"2010-08-15T15:28:56Z","updated_at":"2018-01-30T20:48:33Z","pushed_at":"2018-01-29T10:10:32Z","git_url":"git://github.com/colszowka/simplecov.git","ssh_url":"git@github.com:colszowka/simplecov.git","clone_url":"https://github.com/colszowka/simplecov.git","svn_url":"https://github.com/colszowka/simplecov","homepage":"","size":2041,"stargazers_count":3255,"watchers_count":3255,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":false,"has_pages":true,"forks_count":367,"mirror_url":null,"archived":false,"open_issues_count":49,"license":{"key":"mit","name":"MIT
+        License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit"},"forks":367,"open_issues":49,"watchers":3255,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":21002580,"name":"ruby-submissions","full_name":"turingschool/ruby-submissions","owner":{"login":"turingschool","id":7934292,"avatar_url":"https://avatars0.githubusercontent.com/u/7934292?v=4","gravatar_id":"","url":"https://api.github.com/users/turingschool","html_url":"https://github.com/turingschool","followers_url":"https://api.github.com/users/turingschool/followers","following_url":"https://api.github.com/users/turingschool/following{/other_user}","gists_url":"https://api.github.com/users/turingschool/gists{/gist_id}","starred_url":"https://api.github.com/users/turingschool/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/turingschool/subscriptions","organizations_url":"https://api.github.com/users/turingschool/orgs","repos_url":"https://api.github.com/users/turingschool/repos","events_url":"https://api.github.com/users/turingschool/events{/privacy}","received_events_url":"https://api.github.com/users/turingschool/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/turingschool/ruby-submissions","description":"Repo
+        for tracking submitted assignments in the BEE program","fork":false,"url":"https://api.github.com/repos/turingschool/ruby-submissions","forks_url":"https://api.github.com/repos/turingschool/ruby-submissions/forks","keys_url":"https://api.github.com/repos/turingschool/ruby-submissions/keys{/key_id}","collaborators_url":"https://api.github.com/repos/turingschool/ruby-submissions/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/turingschool/ruby-submissions/teams","hooks_url":"https://api.github.com/repos/turingschool/ruby-submissions/hooks","issue_events_url":"https://api.github.com/repos/turingschool/ruby-submissions/issues/events{/number}","events_url":"https://api.github.com/repos/turingschool/ruby-submissions/events","assignees_url":"https://api.github.com/repos/turingschool/ruby-submissions/assignees{/user}","branches_url":"https://api.github.com/repos/turingschool/ruby-submissions/branches{/branch}","tags_url":"https://api.github.com/repos/turingschool/ruby-submissions/tags","blobs_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/refs{/sha}","trees_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/trees{/sha}","statuses_url":"https://api.github.com/repos/turingschool/ruby-submissions/statuses/{sha}","languages_url":"https://api.github.com/repos/turingschool/ruby-submissions/languages","stargazers_url":"https://api.github.com/repos/turingschool/ruby-submissions/stargazers","contributors_url":"https://api.github.com/repos/turingschool/ruby-submissions/contributors","subscribers_url":"https://api.github.com/repos/turingschool/ruby-submissions/subscribers","subscription_url":"https://api.github.com/repos/turingschool/ruby-submissions/subscription","commits_url":"https://api.github.com/repos/turingschool/ruby-submissions/commits{/sha}","git_commits_url":"https://api.github.com/repos/turingschool/ruby-submissions/git/commits{/sha}","comments_url":"https://api.github.com/repos/turingschool/ruby-submissions/comments{/number}","issue_comment_url":"https://api.github.com/repos/turingschool/ruby-submissions/issues/comments{/number}","contents_url":"https://api.github.com/repos/turingschool/ruby-submissions/contents/{+path}","compare_url":"https://api.github.com/repos/turingschool/ruby-submissions/compare/{base}...{head}","merges_url":"https://api.github.com/repos/turingschool/ruby-submissions/merges","archive_url":"https://api.github.com/repos/turingschool/ruby-submissions/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/turingschool/ruby-submissions/downloads","issues_url":"https://api.github.com/repos/turingschool/ruby-submissions/issues{/number}","pulls_url":"https://api.github.com/repos/turingschool/ruby-submissions/pulls{/number}","milestones_url":"https://api.github.com/repos/turingschool/ruby-submissions/milestones{/number}","notifications_url":"https://api.github.com/repos/turingschool/ruby-submissions/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/turingschool/ruby-submissions/labels{/name}","releases_url":"https://api.github.com/repos/turingschool/ruby-submissions/releases{/id}","deployments_url":"https://api.github.com/repos/turingschool/ruby-submissions/deployments","created_at":"2014-06-19T14:09:44Z","updated_at":"2017-10-27T13:57:39Z","pushed_at":"2018-01-31T20:38:14Z","git_url":"git://github.com/turingschool/ruby-submissions.git","ssh_url":"git@github.com:turingschool/ruby-submissions.git","clone_url":"https://github.com/turingschool/ruby-submissions.git","svn_url":"https://github.com/turingschool/ruby-submissions","homepage":"","size":112153,"stargazers_count":9,"watchers_count":9,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":385,"mirror_url":null,"archived":false,"open_issues_count":0,"license":null,"forks":385,"open_issues":0,"watchers":9,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":28755565,"name":"Dominion","full_name":"RussellFamily/Dominion","owner":{"login":"RussellFamily","id":10384002,"avatar_url":"https://avatars2.githubusercontent.com/u/10384002?v=4","gravatar_id":"","url":"https://api.github.com/users/RussellFamily","html_url":"https://github.com/RussellFamily","followers_url":"https://api.github.com/users/RussellFamily/followers","following_url":"https://api.github.com/users/RussellFamily/following{/other_user}","gists_url":"https://api.github.com/users/RussellFamily/gists{/gist_id}","starred_url":"https://api.github.com/users/RussellFamily/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/RussellFamily/subscriptions","organizations_url":"https://api.github.com/users/RussellFamily/orgs","repos_url":"https://api.github.com/users/RussellFamily/repos","events_url":"https://api.github.com/users/RussellFamily/events{/privacy}","received_events_url":"https://api.github.com/users/RussellFamily/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/RussellFamily/Dominion","description":null,"fork":false,"url":"https://api.github.com/repos/RussellFamily/Dominion","forks_url":"https://api.github.com/repos/RussellFamily/Dominion/forks","keys_url":"https://api.github.com/repos/RussellFamily/Dominion/keys{/key_id}","collaborators_url":"https://api.github.com/repos/RussellFamily/Dominion/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/RussellFamily/Dominion/teams","hooks_url":"https://api.github.com/repos/RussellFamily/Dominion/hooks","issue_events_url":"https://api.github.com/repos/RussellFamily/Dominion/issues/events{/number}","events_url":"https://api.github.com/repos/RussellFamily/Dominion/events","assignees_url":"https://api.github.com/repos/RussellFamily/Dominion/assignees{/user}","branches_url":"https://api.github.com/repos/RussellFamily/Dominion/branches{/branch}","tags_url":"https://api.github.com/repos/RussellFamily/Dominion/tags","blobs_url":"https://api.github.com/repos/RussellFamily/Dominion/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/RussellFamily/Dominion/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/RussellFamily/Dominion/git/refs{/sha}","trees_url":"https://api.github.com/repos/RussellFamily/Dominion/git/trees{/sha}","statuses_url":"https://api.github.com/repos/RussellFamily/Dominion/statuses/{sha}","languages_url":"https://api.github.com/repos/RussellFamily/Dominion/languages","stargazers_url":"https://api.github.com/repos/RussellFamily/Dominion/stargazers","contributors_url":"https://api.github.com/repos/RussellFamily/Dominion/contributors","subscribers_url":"https://api.github.com/repos/RussellFamily/Dominion/subscribers","subscription_url":"https://api.github.com/repos/RussellFamily/Dominion/subscription","commits_url":"https://api.github.com/repos/RussellFamily/Dominion/commits{/sha}","git_commits_url":"https://api.github.com/repos/RussellFamily/Dominion/git/commits{/sha}","comments_url":"https://api.github.com/repos/RussellFamily/Dominion/comments{/number}","issue_comment_url":"https://api.github.com/repos/RussellFamily/Dominion/issues/comments{/number}","contents_url":"https://api.github.com/repos/RussellFamily/Dominion/contents/{+path}","compare_url":"https://api.github.com/repos/RussellFamily/Dominion/compare/{base}...{head}","merges_url":"https://api.github.com/repos/RussellFamily/Dominion/merges","archive_url":"https://api.github.com/repos/RussellFamily/Dominion/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/RussellFamily/Dominion/downloads","issues_url":"https://api.github.com/repos/RussellFamily/Dominion/issues{/number}","pulls_url":"https://api.github.com/repos/RussellFamily/Dominion/pulls{/number}","milestones_url":"https://api.github.com/repos/RussellFamily/Dominion/milestones{/number}","notifications_url":"https://api.github.com/repos/RussellFamily/Dominion/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/RussellFamily/Dominion/labels{/name}","releases_url":"https://api.github.com/repos/RussellFamily/Dominion/releases{/id}","deployments_url":"https://api.github.com/repos/RussellFamily/Dominion/deployments","created_at":"2015-01-03T21:48:35Z","updated_at":"2017-07-18T16:24:12Z","pushed_at":"2016-11-30T05:53:08Z","git_url":"git://github.com/RussellFamily/Dominion.git","ssh_url":"git@github.com:RussellFamily/Dominion.git","clone_url":"https://github.com/RussellFamily/Dominion.git","svn_url":"https://github.com/RussellFamily/Dominion","homepage":null,"size":13322,"stargazers_count":3,"watchers_count":3,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":3,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":96861698,"name":"cardgame_21","full_name":"noah-dev/cardgame_21","owner":{"login":"noah-dev","id":29388801,"avatar_url":"https://avatars3.githubusercontent.com/u/29388801?v=4","gravatar_id":"","url":"https://api.github.com/users/noah-dev","html_url":"https://github.com/noah-dev","followers_url":"https://api.github.com/users/noah-dev/followers","following_url":"https://api.github.com/users/noah-dev/following{/other_user}","gists_url":"https://api.github.com/users/noah-dev/gists{/gist_id}","starred_url":"https://api.github.com/users/noah-dev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/noah-dev/subscriptions","organizations_url":"https://api.github.com/users/noah-dev/orgs","repos_url":"https://api.github.com/users/noah-dev/repos","events_url":"https://api.github.com/users/noah-dev/events{/privacy}","received_events_url":"https://api.github.com/users/noah-dev/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/noah-dev/cardgame_21","description":"My
+        OOP practice with python","fork":false,"url":"https://api.github.com/repos/noah-dev/cardgame_21","forks_url":"https://api.github.com/repos/noah-dev/cardgame_21/forks","keys_url":"https://api.github.com/repos/noah-dev/cardgame_21/keys{/key_id}","collaborators_url":"https://api.github.com/repos/noah-dev/cardgame_21/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/noah-dev/cardgame_21/teams","hooks_url":"https://api.github.com/repos/noah-dev/cardgame_21/hooks","issue_events_url":"https://api.github.com/repos/noah-dev/cardgame_21/issues/events{/number}","events_url":"https://api.github.com/repos/noah-dev/cardgame_21/events","assignees_url":"https://api.github.com/repos/noah-dev/cardgame_21/assignees{/user}","branches_url":"https://api.github.com/repos/noah-dev/cardgame_21/branches{/branch}","tags_url":"https://api.github.com/repos/noah-dev/cardgame_21/tags","blobs_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/refs{/sha}","trees_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/trees{/sha}","statuses_url":"https://api.github.com/repos/noah-dev/cardgame_21/statuses/{sha}","languages_url":"https://api.github.com/repos/noah-dev/cardgame_21/languages","stargazers_url":"https://api.github.com/repos/noah-dev/cardgame_21/stargazers","contributors_url":"https://api.github.com/repos/noah-dev/cardgame_21/contributors","subscribers_url":"https://api.github.com/repos/noah-dev/cardgame_21/subscribers","subscription_url":"https://api.github.com/repos/noah-dev/cardgame_21/subscription","commits_url":"https://api.github.com/repos/noah-dev/cardgame_21/commits{/sha}","git_commits_url":"https://api.github.com/repos/noah-dev/cardgame_21/git/commits{/sha}","comments_url":"https://api.github.com/repos/noah-dev/cardgame_21/comments{/number}","issue_comment_url":"https://api.github.com/repos/noah-dev/cardgame_21/issues/comments{/number}","contents_url":"https://api.github.com/repos/noah-dev/cardgame_21/contents/{+path}","compare_url":"https://api.github.com/repos/noah-dev/cardgame_21/compare/{base}...{head}","merges_url":"https://api.github.com/repos/noah-dev/cardgame_21/merges","archive_url":"https://api.github.com/repos/noah-dev/cardgame_21/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/noah-dev/cardgame_21/downloads","issues_url":"https://api.github.com/repos/noah-dev/cardgame_21/issues{/number}","pulls_url":"https://api.github.com/repos/noah-dev/cardgame_21/pulls{/number}","milestones_url":"https://api.github.com/repos/noah-dev/cardgame_21/milestones{/number}","notifications_url":"https://api.github.com/repos/noah-dev/cardgame_21/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/noah-dev/cardgame_21/labels{/name}","releases_url":"https://api.github.com/repos/noah-dev/cardgame_21/releases{/id}","deployments_url":"https://api.github.com/repos/noah-dev/cardgame_21/deployments","created_at":"2017-07-11T07:02:03Z","updated_at":"2017-07-17T22:28:47Z","pushed_at":"2017-07-19T06:15:00Z","git_url":"git://github.com/noah-dev/cardgame_21.git","ssh_url":"git@github.com:noah-dev/cardgame_21.git","clone_url":"https://github.com/noah-dev/cardgame_21.git","svn_url":"https://github.com/noah-dev/cardgame_21","homepage":null,"size":161,"stargazers_count":1,"watchers_count":1,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":1,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":1385122,"name":"matplotlib","full_name":"matplotlib/matplotlib","owner":{"login":"matplotlib","id":215947,"avatar_url":"https://avatars0.githubusercontent.com/u/215947?v=4","gravatar_id":"","url":"https://api.github.com/users/matplotlib","html_url":"https://github.com/matplotlib","followers_url":"https://api.github.com/users/matplotlib/followers","following_url":"https://api.github.com/users/matplotlib/following{/other_user}","gists_url":"https://api.github.com/users/matplotlib/gists{/gist_id}","starred_url":"https://api.github.com/users/matplotlib/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/matplotlib/subscriptions","organizations_url":"https://api.github.com/users/matplotlib/orgs","repos_url":"https://api.github.com/users/matplotlib/repos","events_url":"https://api.github.com/users/matplotlib/events{/privacy}","received_events_url":"https://api.github.com/users/matplotlib/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/matplotlib/matplotlib","description":"matplotlib:
+        plotting with Python","fork":false,"url":"https://api.github.com/repos/matplotlib/matplotlib","forks_url":"https://api.github.com/repos/matplotlib/matplotlib/forks","keys_url":"https://api.github.com/repos/matplotlib/matplotlib/keys{/key_id}","collaborators_url":"https://api.github.com/repos/matplotlib/matplotlib/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/matplotlib/matplotlib/teams","hooks_url":"https://api.github.com/repos/matplotlib/matplotlib/hooks","issue_events_url":"https://api.github.com/repos/matplotlib/matplotlib/issues/events{/number}","events_url":"https://api.github.com/repos/matplotlib/matplotlib/events","assignees_url":"https://api.github.com/repos/matplotlib/matplotlib/assignees{/user}","branches_url":"https://api.github.com/repos/matplotlib/matplotlib/branches{/branch}","tags_url":"https://api.github.com/repos/matplotlib/matplotlib/tags","blobs_url":"https://api.github.com/repos/matplotlib/matplotlib/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/matplotlib/matplotlib/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/matplotlib/matplotlib/git/refs{/sha}","trees_url":"https://api.github.com/repos/matplotlib/matplotlib/git/trees{/sha}","statuses_url":"https://api.github.com/repos/matplotlib/matplotlib/statuses/{sha}","languages_url":"https://api.github.com/repos/matplotlib/matplotlib/languages","stargazers_url":"https://api.github.com/repos/matplotlib/matplotlib/stargazers","contributors_url":"https://api.github.com/repos/matplotlib/matplotlib/contributors","subscribers_url":"https://api.github.com/repos/matplotlib/matplotlib/subscribers","subscription_url":"https://api.github.com/repos/matplotlib/matplotlib/subscription","commits_url":"https://api.github.com/repos/matplotlib/matplotlib/commits{/sha}","git_commits_url":"https://api.github.com/repos/matplotlib/matplotlib/git/commits{/sha}","comments_url":"https://api.github.com/repos/matplotlib/matplotlib/comments{/number}","issue_comment_url":"https://api.github.com/repos/matplotlib/matplotlib/issues/comments{/number}","contents_url":"https://api.github.com/repos/matplotlib/matplotlib/contents/{+path}","compare_url":"https://api.github.com/repos/matplotlib/matplotlib/compare/{base}...{head}","merges_url":"https://api.github.com/repos/matplotlib/matplotlib/merges","archive_url":"https://api.github.com/repos/matplotlib/matplotlib/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/matplotlib/matplotlib/downloads","issues_url":"https://api.github.com/repos/matplotlib/matplotlib/issues{/number}","pulls_url":"https://api.github.com/repos/matplotlib/matplotlib/pulls{/number}","milestones_url":"https://api.github.com/repos/matplotlib/matplotlib/milestones{/number}","notifications_url":"https://api.github.com/repos/matplotlib/matplotlib/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/matplotlib/matplotlib/labels{/name}","releases_url":"https://api.github.com/repos/matplotlib/matplotlib/releases{/id}","deployments_url":"https://api.github.com/repos/matplotlib/matplotlib/deployments","created_at":"2011-02-19T03:17:12Z","updated_at":"2018-01-31T18:51:29Z","pushed_at":"2018-01-31T21:24:08Z","git_url":"git://github.com/matplotlib/matplotlib.git","ssh_url":"git@github.com:matplotlib/matplotlib.git","clone_url":"https://github.com/matplotlib/matplotlib.git","svn_url":"https://github.com/matplotlib/matplotlib","homepage":"http://matplotlib.org/","size":320842,"stargazers_count":6689,"watchers_count":6689,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":3143,"mirror_url":null,"archived":false,"open_issues_count":1349,"license":null,"forks":3143,"open_issues":1349,"watchers":6689,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":843222,"name":"scikit-learn","full_name":"scikit-learn/scikit-learn","owner":{"login":"scikit-learn","id":365630,"avatar_url":"https://avatars2.githubusercontent.com/u/365630?v=4","gravatar_id":"","url":"https://api.github.com/users/scikit-learn","html_url":"https://github.com/scikit-learn","followers_url":"https://api.github.com/users/scikit-learn/followers","following_url":"https://api.github.com/users/scikit-learn/following{/other_user}","gists_url":"https://api.github.com/users/scikit-learn/gists{/gist_id}","starred_url":"https://api.github.com/users/scikit-learn/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/scikit-learn/subscriptions","organizations_url":"https://api.github.com/users/scikit-learn/orgs","repos_url":"https://api.github.com/users/scikit-learn/repos","events_url":"https://api.github.com/users/scikit-learn/events{/privacy}","received_events_url":"https://api.github.com/users/scikit-learn/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/scikit-learn/scikit-learn","description":"scikit-learn:
+        machine learning in Python","fork":false,"url":"https://api.github.com/repos/scikit-learn/scikit-learn","forks_url":"https://api.github.com/repos/scikit-learn/scikit-learn/forks","keys_url":"https://api.github.com/repos/scikit-learn/scikit-learn/keys{/key_id}","collaborators_url":"https://api.github.com/repos/scikit-learn/scikit-learn/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/scikit-learn/scikit-learn/teams","hooks_url":"https://api.github.com/repos/scikit-learn/scikit-learn/hooks","issue_events_url":"https://api.github.com/repos/scikit-learn/scikit-learn/issues/events{/number}","events_url":"https://api.github.com/repos/scikit-learn/scikit-learn/events","assignees_url":"https://api.github.com/repos/scikit-learn/scikit-learn/assignees{/user}","branches_url":"https://api.github.com/repos/scikit-learn/scikit-learn/branches{/branch}","tags_url":"https://api.github.com/repos/scikit-learn/scikit-learn/tags","blobs_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/refs{/sha}","trees_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/trees{/sha}","statuses_url":"https://api.github.com/repos/scikit-learn/scikit-learn/statuses/{sha}","languages_url":"https://api.github.com/repos/scikit-learn/scikit-learn/languages","stargazers_url":"https://api.github.com/repos/scikit-learn/scikit-learn/stargazers","contributors_url":"https://api.github.com/repos/scikit-learn/scikit-learn/contributors","subscribers_url":"https://api.github.com/repos/scikit-learn/scikit-learn/subscribers","subscription_url":"https://api.github.com/repos/scikit-learn/scikit-learn/subscription","commits_url":"https://api.github.com/repos/scikit-learn/scikit-learn/commits{/sha}","git_commits_url":"https://api.github.com/repos/scikit-learn/scikit-learn/git/commits{/sha}","comments_url":"https://api.github.com/repos/scikit-learn/scikit-learn/comments{/number}","issue_comment_url":"https://api.github.com/repos/scikit-learn/scikit-learn/issues/comments{/number}","contents_url":"https://api.github.com/repos/scikit-learn/scikit-learn/contents/{+path}","compare_url":"https://api.github.com/repos/scikit-learn/scikit-learn/compare/{base}...{head}","merges_url":"https://api.github.com/repos/scikit-learn/scikit-learn/merges","archive_url":"https://api.github.com/repos/scikit-learn/scikit-learn/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/scikit-learn/scikit-learn/downloads","issues_url":"https://api.github.com/repos/scikit-learn/scikit-learn/issues{/number}","pulls_url":"https://api.github.com/repos/scikit-learn/scikit-learn/pulls{/number}","milestones_url":"https://api.github.com/repos/scikit-learn/scikit-learn/milestones{/number}","notifications_url":"https://api.github.com/repos/scikit-learn/scikit-learn/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/scikit-learn/scikit-learn/labels{/name}","releases_url":"https://api.github.com/repos/scikit-learn/scikit-learn/releases{/id}","deployments_url":"https://api.github.com/repos/scikit-learn/scikit-learn/deployments","created_at":"2010-08-17T09:43:38Z","updated_at":"2018-01-31T20:28:01Z","pushed_at":"2018-01-31T21:04:25Z","git_url":"git://github.com/scikit-learn/scikit-learn.git","ssh_url":"git@github.com:scikit-learn/scikit-learn.git","clone_url":"https://github.com/scikit-learn/scikit-learn.git","svn_url":"https://github.com/scikit-learn/scikit-learn","homepage":"http://scikit-learn.org","size":88662,"stargazers_count":25304,"watchers_count":25304,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":12920,"mirror_url":null,"archived":false,"open_issues_count":1556,"license":{"key":"other","name":"Other","spdx_id":null,"url":null},"forks":12920,"open_issues":1556,"watchers":25304,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}},{"id":858127,"name":"pandas","full_name":"pandas-dev/pandas","owner":{"login":"pandas-dev","id":21206976,"avatar_url":"https://avatars2.githubusercontent.com/u/21206976?v=4","gravatar_id":"","url":"https://api.github.com/users/pandas-dev","html_url":"https://github.com/pandas-dev","followers_url":"https://api.github.com/users/pandas-dev/followers","following_url":"https://api.github.com/users/pandas-dev/following{/other_user}","gists_url":"https://api.github.com/users/pandas-dev/gists{/gist_id}","starred_url":"https://api.github.com/users/pandas-dev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pandas-dev/subscriptions","organizations_url":"https://api.github.com/users/pandas-dev/orgs","repos_url":"https://api.github.com/users/pandas-dev/repos","events_url":"https://api.github.com/users/pandas-dev/events{/privacy}","received_events_url":"https://api.github.com/users/pandas-dev/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/pandas-dev/pandas","description":"Flexible
+        and powerful data analysis / manipulation library for Python, providing labeled
+        data structures similar to R data.frame objects, statistical functions, and
+        much more","fork":false,"url":"https://api.github.com/repos/pandas-dev/pandas","forks_url":"https://api.github.com/repos/pandas-dev/pandas/forks","keys_url":"https://api.github.com/repos/pandas-dev/pandas/keys{/key_id}","collaborators_url":"https://api.github.com/repos/pandas-dev/pandas/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/pandas-dev/pandas/teams","hooks_url":"https://api.github.com/repos/pandas-dev/pandas/hooks","issue_events_url":"https://api.github.com/repos/pandas-dev/pandas/issues/events{/number}","events_url":"https://api.github.com/repos/pandas-dev/pandas/events","assignees_url":"https://api.github.com/repos/pandas-dev/pandas/assignees{/user}","branches_url":"https://api.github.com/repos/pandas-dev/pandas/branches{/branch}","tags_url":"https://api.github.com/repos/pandas-dev/pandas/tags","blobs_url":"https://api.github.com/repos/pandas-dev/pandas/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/pandas-dev/pandas/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/pandas-dev/pandas/git/refs{/sha}","trees_url":"https://api.github.com/repos/pandas-dev/pandas/git/trees{/sha}","statuses_url":"https://api.github.com/repos/pandas-dev/pandas/statuses/{sha}","languages_url":"https://api.github.com/repos/pandas-dev/pandas/languages","stargazers_url":"https://api.github.com/repos/pandas-dev/pandas/stargazers","contributors_url":"https://api.github.com/repos/pandas-dev/pandas/contributors","subscribers_url":"https://api.github.com/repos/pandas-dev/pandas/subscribers","subscription_url":"https://api.github.com/repos/pandas-dev/pandas/subscription","commits_url":"https://api.github.com/repos/pandas-dev/pandas/commits{/sha}","git_commits_url":"https://api.github.com/repos/pandas-dev/pandas/git/commits{/sha}","comments_url":"https://api.github.com/repos/pandas-dev/pandas/comments{/number}","issue_comment_url":"https://api.github.com/repos/pandas-dev/pandas/issues/comments{/number}","contents_url":"https://api.github.com/repos/pandas-dev/pandas/contents/{+path}","compare_url":"https://api.github.com/repos/pandas-dev/pandas/compare/{base}...{head}","merges_url":"https://api.github.com/repos/pandas-dev/pandas/merges","archive_url":"https://api.github.com/repos/pandas-dev/pandas/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/pandas-dev/pandas/downloads","issues_url":"https://api.github.com/repos/pandas-dev/pandas/issues{/number}","pulls_url":"https://api.github.com/repos/pandas-dev/pandas/pulls{/number}","milestones_url":"https://api.github.com/repos/pandas-dev/pandas/milestones{/number}","notifications_url":"https://api.github.com/repos/pandas-dev/pandas/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/pandas-dev/pandas/labels{/name}","releases_url":"https://api.github.com/repos/pandas-dev/pandas/releases{/id}","deployments_url":"https://api.github.com/repos/pandas-dev/pandas/deployments","created_at":"2010-08-24T01:37:33Z","updated_at":"2018-01-31T21:17:32Z","pushed_at":"2018-01-31T20:58:15Z","git_url":"git://github.com/pandas-dev/pandas.git","ssh_url":"git@github.com:pandas-dev/pandas.git","clone_url":"https://github.com/pandas-dev/pandas.git","svn_url":"https://github.com/pandas-dev/pandas","homepage":"http://pandas.pydata.org","size":115362,"stargazers_count":12711,"watchers_count":12711,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":true,"forks_count":4933,"mirror_url":null,"archived":false,"open_issues_count":2318,"license":{"key":"bsd-3-clause","name":"BSD
+        3-Clause \"New\" or \"Revised\" License","spdx_id":"BSD-3-Clause","url":"https://api.github.com/licenses/bsd-3-clause"},"forks":4933,"open_issues":2318,"watchers":12711,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}}]'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:23 GMT
+- request:
+    method: get
+    uri: https://api.github.com/user/following
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4951'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"11772f8ea5927111be23248b7e75b263"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.042421'
+      X-Github-Request-Id:
+      - C833:0B60:E9D4CA:1E1414E:5A7239E3
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"login":"jmejia","id":73824,"avatar_url":"https://avatars0.githubusercontent.com/u/73824?v=4","gravatar_id":"","url":"https://api.github.com/users/jmejia","html_url":"https://github.com/jmejia","followers_url":"https://api.github.com/users/jmejia/followers","following_url":"https://api.github.com/users/jmejia/following{/other_user}","gists_url":"https://api.github.com/users/jmejia/gists{/gist_id}","starred_url":"https://api.github.com/users/jmejia/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jmejia/subscriptions","organizations_url":"https://api.github.com/users/jmejia/orgs","repos_url":"https://api.github.com/users/jmejia/repos","events_url":"https://api.github.com/users/jmejia/events{/privacy}","received_events_url":"https://api.github.com/users/jmejia/received_events","type":"User","site_admin":false},{"login":"DryFlyRyan","id":13630604,"avatar_url":"https://avatars2.githubusercontent.com/u/13630604?v=4","gravatar_id":"","url":"https://api.github.com/users/DryFlyRyan","html_url":"https://github.com/DryFlyRyan","followers_url":"https://api.github.com/users/DryFlyRyan/followers","following_url":"https://api.github.com/users/DryFlyRyan/following{/other_user}","gists_url":"https://api.github.com/users/DryFlyRyan/gists{/gist_id}","starred_url":"https://api.github.com/users/DryFlyRyan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/DryFlyRyan/subscriptions","organizations_url":"https://api.github.com/users/DryFlyRyan/orgs","repos_url":"https://api.github.com/users/DryFlyRyan/repos","events_url":"https://api.github.com/users/DryFlyRyan/events{/privacy}","received_events_url":"https://api.github.com/users/DryFlyRyan/received_events","type":"User","site_admin":false},{"login":"katyjane8","id":14926785,"avatar_url":"https://avatars1.githubusercontent.com/u/14926785?v=4","gravatar_id":"","url":"https://api.github.com/users/katyjane8","html_url":"https://github.com/katyjane8","followers_url":"https://api.github.com/users/katyjane8/followers","following_url":"https://api.github.com/users/katyjane8/following{/other_user}","gists_url":"https://api.github.com/users/katyjane8/gists{/gist_id}","starred_url":"https://api.github.com/users/katyjane8/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/katyjane8/subscriptions","organizations_url":"https://api.github.com/users/katyjane8/orgs","repos_url":"https://api.github.com/users/katyjane8/repos","events_url":"https://api.github.com/users/katyjane8/events{/privacy}","received_events_url":"https://api.github.com/users/katyjane8/received_events","type":"User","site_admin":false},{"login":"etcetera8","id":22607072,"avatar_url":"https://avatars0.githubusercontent.com/u/22607072?v=4","gravatar_id":"","url":"https://api.github.com/users/etcetera8","html_url":"https://github.com/etcetera8","followers_url":"https://api.github.com/users/etcetera8/followers","following_url":"https://api.github.com/users/etcetera8/following{/other_user}","gists_url":"https://api.github.com/users/etcetera8/gists{/gist_id}","starred_url":"https://api.github.com/users/etcetera8/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/etcetera8/subscriptions","organizations_url":"https://api.github.com/users/etcetera8/orgs","repos_url":"https://api.github.com/users/etcetera8/repos","events_url":"https://api.github.com/users/etcetera8/events{/privacy}","received_events_url":"https://api.github.com/users/etcetera8/received_events","type":"User","site_admin":false},{"login":"timomitchel","id":23040094,"avatar_url":"https://avatars2.githubusercontent.com/u/23040094?v=4","gravatar_id":"","url":"https://api.github.com/users/timomitchel","html_url":"https://github.com/timomitchel","followers_url":"https://api.github.com/users/timomitchel/followers","following_url":"https://api.github.com/users/timomitchel/following{/other_user}","gists_url":"https://api.github.com/users/timomitchel/gists{/gist_id}","starred_url":"https://api.github.com/users/timomitchel/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/timomitchel/subscriptions","organizations_url":"https://api.github.com/users/timomitchel/orgs","repos_url":"https://api.github.com/users/timomitchel/repos","events_url":"https://api.github.com/users/timomitchel/events{/privacy}","received_events_url":"https://api.github.com/users/timomitchel/received_events","type":"User","site_admin":false},{"login":"marshallhouston","id":24700836,"avatar_url":"https://avatars1.githubusercontent.com/u/24700836?v=4","gravatar_id":"","url":"https://api.github.com/users/marshallhouston","html_url":"https://github.com/marshallhouston","followers_url":"https://api.github.com/users/marshallhouston/followers","following_url":"https://api.github.com/users/marshallhouston/following{/other_user}","gists_url":"https://api.github.com/users/marshallhouston/gists{/gist_id}","starred_url":"https://api.github.com/users/marshallhouston/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/marshallhouston/subscriptions","organizations_url":"https://api.github.com/users/marshallhouston/orgs","repos_url":"https://api.github.com/users/marshallhouston/repos","events_url":"https://api.github.com/users/marshallhouston/events{/privacy}","received_events_url":"https://api.github.com/users/marshallhouston/received_events","type":"User","site_admin":false},{"login":"Ecksi","id":29013118,"avatar_url":"https://avatars2.githubusercontent.com/u/29013118?v=4","gravatar_id":"","url":"https://api.github.com/users/Ecksi","html_url":"https://github.com/Ecksi","followers_url":"https://api.github.com/users/Ecksi/followers","following_url":"https://api.github.com/users/Ecksi/following{/other_user}","gists_url":"https://api.github.com/users/Ecksi/gists{/gist_id}","starred_url":"https://api.github.com/users/Ecksi/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Ecksi/subscriptions","organizations_url":"https://api.github.com/users/Ecksi/orgs","repos_url":"https://api.github.com/users/Ecksi/repos","events_url":"https://api.github.com/users/Ecksi/events{/privacy}","received_events_url":"https://api.github.com/users/Ecksi/received_events","type":"User","site_admin":false},{"login":"freshouttheovenprogrammes","id":31221477,"avatar_url":"https://avatars2.githubusercontent.com/u/31221477?v=4","gravatar_id":"","url":"https://api.github.com/users/freshouttheovenprogrammes","html_url":"https://github.com/freshouttheovenprogrammes","followers_url":"https://api.github.com/users/freshouttheovenprogrammes/followers","following_url":"https://api.github.com/users/freshouttheovenprogrammes/following{/other_user}","gists_url":"https://api.github.com/users/freshouttheovenprogrammes/gists{/gist_id}","starred_url":"https://api.github.com/users/freshouttheovenprogrammes/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/freshouttheovenprogrammes/subscriptions","organizations_url":"https://api.github.com/users/freshouttheovenprogrammes/orgs","repos_url":"https://api.github.com/users/freshouttheovenprogrammes/repos","events_url":"https://api.github.com/users/freshouttheovenprogrammes/events{/privacy}","received_events_url":"https://api.github.com/users/freshouttheovenprogrammes/received_events","type":"User","site_admin":false}]'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:24 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/jmejia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4950'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"30a70a98b49989a1069f5315041b832c"
+      Last-Modified:
+      - Sat, 23 Dec 2017 22:43:46 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.040227'
+      X-Github-Request-Id:
+      - C834:0B62:C57D79:1FBECB0:5A7239E4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"jmejia","id":73824,"avatar_url":"https://avatars0.githubusercontent.com/u/73824?v=4","gravatar_id":"","url":"https://api.github.com/users/jmejia","html_url":"https://github.com/jmejia","followers_url":"https://api.github.com/users/jmejia/followers","following_url":"https://api.github.com/users/jmejia/following{/other_user}","gists_url":"https://api.github.com/users/jmejia/gists{/gist_id}","starred_url":"https://api.github.com/users/jmejia/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jmejia/subscriptions","organizations_url":"https://api.github.com/users/jmejia/orgs","repos_url":"https://api.github.com/users/jmejia/repos","events_url":"https://api.github.com/users/jmejia/events{/privacy}","received_events_url":"https://api.github.com/users/jmejia/received_events","type":"User","site_admin":false,"name":"Josh
+        Mejia","company":"Turing School of Software & Design","blog":"https://twitter.com/joshuamejia","location":"Denver,
+        CO","email":"joshua.mejia@gmail.com","hireable":null,"bio":null,"public_repos":61,"public_gists":1,"followers":91,"following":44,"created_at":"2009-04-14T21:42:00Z","updated_at":"2017-12-23T22:43:46Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:24 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/DryFlyRyan
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4949'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"4d0c62052614df241e9aedbfa6df0834"
+      Last-Modified:
+      - Fri, 05 Jan 2018 00:32:00 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.046822'
+      X-Github-Request-Id:
+      - C835:0B61:A2379A:165B3BC:5A7239E4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"DryFlyRyan","id":13630604,"avatar_url":"https://avatars2.githubusercontent.com/u/13630604?v=4","gravatar_id":"","url":"https://api.github.com/users/DryFlyRyan","html_url":"https://github.com/DryFlyRyan","followers_url":"https://api.github.com/users/DryFlyRyan/followers","following_url":"https://api.github.com/users/DryFlyRyan/following{/other_user}","gists_url":"https://api.github.com/users/DryFlyRyan/gists{/gist_id}","starred_url":"https://api.github.com/users/DryFlyRyan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/DryFlyRyan/subscriptions","organizations_url":"https://api.github.com/users/DryFlyRyan/orgs","repos_url":"https://api.github.com/users/DryFlyRyan/repos","events_url":"https://api.github.com/users/DryFlyRyan/events{/privacy}","received_events_url":"https://api.github.com/users/DryFlyRyan/received_events","type":"User","site_admin":false,"name":"Ryan
+        Douglas","company":"Lucky Dog Digital, LLC","blog":"","location":"Denver,
+        CO","email":"ryan@luckydogdigital.com","hireable":true,"bio":null,"public_repos":109,"public_gists":2,"followers":29,"following":28,"created_at":"2015-08-03T19:29:35Z","updated_at":"2018-01-05T00:32:00Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:24 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/katyjane8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4948'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"ba428fa25e1a1b5041fb120b4338dd62"
+      Last-Modified:
+      - Wed, 31 Jan 2018 01:16:39 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.038378'
+      X-Github-Request-Id:
+      - C836:0B60:E9D515:1E141D7:5A7239E4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"katyjane8","id":14926785,"avatar_url":"https://avatars1.githubusercontent.com/u/14926785?v=4","gravatar_id":"","url":"https://api.github.com/users/katyjane8","html_url":"https://github.com/katyjane8","followers_url":"https://api.github.com/users/katyjane8/followers","following_url":"https://api.github.com/users/katyjane8/following{/other_user}","gists_url":"https://api.github.com/users/katyjane8/gists{/gist_id}","starred_url":"https://api.github.com/users/katyjane8/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/katyjane8/subscriptions","organizations_url":"https://api.github.com/users/katyjane8/orgs","repos_url":"https://api.github.com/users/katyjane8/repos","events_url":"https://api.github.com/users/katyjane8/events{/privacy}","received_events_url":"https://api.github.com/users/katyjane8/received_events","type":"User","site_admin":false,"name":"Kathrine","company":null,"blog":"www.kathrinewelyczko.com","location":"Louisville,
+        CO","email":null,"hireable":true,"bio":"dedicated project manager turned engineer
+        with 10+ professional experience. ","public_repos":75,"public_gists":12,"followers":8,"following":11,"created_at":"2015-10-01T14:53:19Z","updated_at":"2018-01-31T01:16:39Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:24 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/etcetera8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4947'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"7ff2a09e9273062e2268ab48e14130c0"
+      Last-Modified:
+      - Sun, 26 Nov 2017 16:18:47 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.047741'
+      X-Github-Request-Id:
+      - C837:0B62:C57DB0:1FBED38:5A7239E4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"etcetera8","id":22607072,"avatar_url":"https://avatars0.githubusercontent.com/u/22607072?v=4","gravatar_id":"","url":"https://api.github.com/users/etcetera8","html_url":"https://github.com/etcetera8","followers_url":"https://api.github.com/users/etcetera8/followers","following_url":"https://api.github.com/users/etcetera8/following{/other_user}","gists_url":"https://api.github.com/users/etcetera8/gists{/gist_id}","starred_url":"https://api.github.com/users/etcetera8/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/etcetera8/subscriptions","organizations_url":"https://api.github.com/users/etcetera8/orgs","repos_url":"https://api.github.com/users/etcetera8/repos","events_url":"https://api.github.com/users/etcetera8/events{/privacy}","received_events_url":"https://api.github.com/users/etcetera8/received_events","type":"User","site_admin":false,"name":"parker
+        lindley","company":null,"blog":"","location":"Denver","email":null,"hireable":null,"bio":"Turing
+        front-end student. Rides bikes.","public_repos":26,"public_gists":13,"followers":12,"following":10,"created_at":"2016-10-04T02:35:52Z","updated_at":"2017-11-26T16:18:47Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:25 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/timomitchel
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4946'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"ce6b87625c83d24a4a6679b80649c2c3"
+      Last-Modified:
+      - Wed, 31 Jan 2018 00:06:27 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.040379'
+      X-Github-Request-Id:
+      - C838:0B60:E9D540:1E14235:5A7239E5
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"timomitchel","id":23040094,"avatar_url":"https://avatars2.githubusercontent.com/u/23040094?v=4","gravatar_id":"","url":"https://api.github.com/users/timomitchel","html_url":"https://github.com/timomitchel","followers_url":"https://api.github.com/users/timomitchel/followers","following_url":"https://api.github.com/users/timomitchel/following{/other_user}","gists_url":"https://api.github.com/users/timomitchel/gists{/gist_id}","starred_url":"https://api.github.com/users/timomitchel/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/timomitchel/subscriptions","organizations_url":"https://api.github.com/users/timomitchel/orgs","repos_url":"https://api.github.com/users/timomitchel/repos","events_url":"https://api.github.com/users/timomitchel/events{/privacy}","received_events_url":"https://api.github.com/users/timomitchel/received_events","type":"User","site_admin":false,"name":"Timothy
+        Tyrrell","company":null,"blog":"","location":"Denver, CO","email":"timomitchel23@gmail.com","hireable":true,"bio":"I''m
+        a backend student at Turing School of Software and Design in Denver, CO","public_repos":48,"public_gists":8,"followers":5,"following":9,"created_at":"2016-10-24T20:21:08Z","updated_at":"2018-01-31T00:06:27Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:25 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/marshallhouston
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4945'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"ce0ee3a9a7623b468ade061032af1a62"
+      Last-Modified:
+      - Thu, 11 Jan 2018 23:33:18 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.037097'
+      X-Github-Request-Id:
+      - C839:0B60:E9D55C:1E14260:5A7239E5
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"marshallhouston","id":24700836,"avatar_url":"https://avatars1.githubusercontent.com/u/24700836?v=4","gravatar_id":"","url":"https://api.github.com/users/marshallhouston","html_url":"https://github.com/marshallhouston","followers_url":"https://api.github.com/users/marshallhouston/followers","following_url":"https://api.github.com/users/marshallhouston/following{/other_user}","gists_url":"https://api.github.com/users/marshallhouston/gists{/gist_id}","starred_url":"https://api.github.com/users/marshallhouston/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/marshallhouston/subscriptions","organizations_url":"https://api.github.com/users/marshallhouston/orgs","repos_url":"https://api.github.com/users/marshallhouston/repos","events_url":"https://api.github.com/users/marshallhouston/events{/privacy}","received_events_url":"https://api.github.com/users/marshallhouston/received_events","type":"User","site_admin":false,"name":"Marshall
+        Houston","company":null,"blog":"","location":"Denver, CO","email":"marshall.houston@gmail.com","hireable":null,"bio":"I
+        am a former middle school teacher with six years of experience in the K-12
+        education space finding my way in the world of development.","public_repos":53,"public_gists":18,"followers":7,"following":7,"created_at":"2016-12-21T15:50:25Z","updated_at":"2018-01-11T23:33:18Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:25 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/Ecksi
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4944'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"ef95c27fd31d7d08a62c2ff6c9224bb4"
+      Last-Modified:
+      - Thu, 11 Jan 2018 23:38:55 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.034019'
+      X-Github-Request-Id:
+      - C83A:0B60:E9D579:1E14298:5A7239E5
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"Ecksi","id":29013118,"avatar_url":"https://avatars2.githubusercontent.com/u/29013118?v=4","gravatar_id":"","url":"https://api.github.com/users/Ecksi","html_url":"https://github.com/Ecksi","followers_url":"https://api.github.com/users/Ecksi/followers","following_url":"https://api.github.com/users/Ecksi/following{/other_user}","gists_url":"https://api.github.com/users/Ecksi/gists{/gist_id}","starred_url":"https://api.github.com/users/Ecksi/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Ecksi/subscriptions","organizations_url":"https://api.github.com/users/Ecksi/orgs","repos_url":"https://api.github.com/users/Ecksi/repos","events_url":"https://api.github.com/users/Ecksi/events{/privacy}","received_events_url":"https://api.github.com/users/Ecksi/received_events","type":"User","site_admin":false,"name":"Jim","company":null,"blog":"","location":"Denver,
+        CO","email":null,"hireable":null,"bio":"@turingschool - Student 1710 Backend
+        Software Development","public_repos":29,"public_gists":16,"followers":8,"following":15,"created_at":"2017-05-28T10:02:12Z","updated_at":"2018-01-11T23:38:55Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:25 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/freshouttheovenprogrammes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<github_user_token>"
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 31 Jan 2018 21:49:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4943'
+      X-Ratelimit-Reset:
+      - '1517437740'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"cb77062c533cf06e9cbc42d61dfdfd40"
+      Last-Modified:
+      - Fri, 17 Nov 2017 16:00:20 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 01d9a32a2852ef9529d9
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.042691'
+      X-Github-Request-Id:
+      - C83B:0B62:C57DF5:1FBEDDE:5A7239E5
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"freshouttheovenprogrammes","id":31221477,"avatar_url":"https://avatars2.githubusercontent.com/u/31221477?v=4","gravatar_id":"","url":"https://api.github.com/users/freshouttheovenprogrammes","html_url":"https://github.com/freshouttheovenprogrammes","followers_url":"https://api.github.com/users/freshouttheovenprogrammes/followers","following_url":"https://api.github.com/users/freshouttheovenprogrammes/following{/other_user}","gists_url":"https://api.github.com/users/freshouttheovenprogrammes/gists{/gist_id}","starred_url":"https://api.github.com/users/freshouttheovenprogrammes/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/freshouttheovenprogrammes/subscriptions","organizations_url":"https://api.github.com/users/freshouttheovenprogrammes/orgs","repos_url":"https://api.github.com/users/freshouttheovenprogrammes/repos","events_url":"https://api.github.com/users/freshouttheovenprogrammes/events{/privacy}","received_events_url":"https://api.github.com/users/freshouttheovenprogrammes/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"public_repos":34,"public_gists":5,"followers":5,"following":6,"created_at":"2017-08-21T19:10:02Z","updated_at":"2017-11-17T16:00:20Z"}'
+    http_version: 
+  recorded_at: Wed, 31 Jan 2018 21:49:26 GMT
+recorded_with: VCR 3.0.3
