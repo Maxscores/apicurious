@@ -11,6 +11,10 @@ describe "User visits dashboard" do
 
         click_on "Repositories"
 
+        within (".selected") do
+          expect(page).to have_content("Repositories")
+        end
+        expect(page).to have_css(".repo", count: 28)
         within first(".repo") do
           expect(page).to have_link("100-days-of-code")
           expect(page).to have_content("Fork this template")
