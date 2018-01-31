@@ -6,6 +6,4 @@ class User < ApplicationRecord
       new_user.oauth_token = auth_hash.credentials.token
     end
   end
-
-  
 end
