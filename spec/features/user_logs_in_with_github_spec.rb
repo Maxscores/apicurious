@@ -1,6 +1,6 @@
 describe "User visits root page" do
   it "clicks login" do
-    VCR.use_cassette("user_authentication") do
+    VCR.use_cassette("features/user_logs_in_with_github") do
       stub_omniauth
 
       visit "/"
