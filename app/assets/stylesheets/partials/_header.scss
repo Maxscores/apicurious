@@ -14,9 +14,7 @@ nav {
   font-weight: 600;
 }
 
-.octicon {
-  fill: $lite-grey;
-}
+
 
 .menu {
   display: flex;
@@ -24,6 +22,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 1000px;
+  .octicon {
+    fill: $lite-grey;
+  }
 }
 
 .links {

@@ -1,50 +1,42 @@
 <div class="main">
   <div class="profile-card">
-    <%= image_tag @github_user.avatar_url, class: "profile-pic" %>
+    <%= image_tag @presenter.avatar_url, class: "profile-pic" %>
     <div class="names">
-      <span class="full-name"><%= @github_user.full_name %></span><br>
+      <span class="full-name"><%= @presenter.full_name %></span><br>
       <span class="username"><%= current_user.screen_name %></span>
     </div>
     <div class="bio">
-      <p><%= @github_user.bio %></p>
+      <p><%= @presenter.bio %></p>
     </div>
     <div class="details">
-      <p>
-        <svg aria-hidden="true" class="octicon-location" height="16" version="1.1" viewBox="0 0 12 16" width="12">
-          <path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z">
-          </path>
-        </svg>
-        <%= @github_user.location %>
-      </p>
+      <% if @presenter.company %>
+      <div class="company">
+        <%= render "layouts/company" %>
+        <%= @presenter.company %>
+      </div>
+      <% end %>
+      <% if @presenter.location %>
+      <div class="location">
+        <%= render "layouts/location" %>
+        <%= @presenter.location %>
+      </div>
+      <% end %>
+      <% if @presenter.email %>
+      <div class="email">
+        <%= render "layouts/email" %>
+        <%= link_to @presenter.email %>
+      </div>
+      <% end %>
+      <% if @presenter.blog %>
+      <div class="blog">
+        <%= render "layouts/link" %>
+        <%= link_to @presenter.blog %>
+      </div>
+      <% end %>
     </div>
   </div>
   <div class="content">
-    <div class="section-tabs">
-      <div class="section-button" id="overview">
-        <h3 class="button-text">Overview</h3>
-      </div>
-      <div class="section-button selected" id="repositories">
-        <h3 class="button-text">Repositories <span><%= @repos.count %></span></h3>
-      </div>
-      <div class="section-button" id="stars">
-        <h3 class="button-text">Stars <span><%= @stars.count %></span></h3>
-      </div>
-      <div class="section-button" id="followers">
-        <h3 class="button-text">Followers <span><%= @github_user.followers_count %></span></h3>
-      </div>
-      <div class="section-button" id="following">
-        <h3 class="button-text">Following <span><%= @github_user.following_count %></span></h3>
-      </div>
-    </div>
-    <div class="repos">
-      <% @repos.each do |repo| %>
-        <div class="repo">
-          <%= link_to repo.name, repo.http_url ,class: "repo-link", disabled: true %>
-          <div class="details">
-          Updated <%= time_ago_in_words(repo.updated_at) %> ago
-          </div>
-        </div>
-      <% end %>
-    </div>
+    <%= render "dashboard/tabs" %>
+    <%= tab_data(@presenter.tab) %>
   </div>
 </div>

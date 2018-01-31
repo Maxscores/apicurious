@@ -1,0 +1,7 @@
+<div class="repo">
+  <%= link_to repo.name, repo.http_url ,class: "repo-link", disabled: true %>
+  <div class="details">
+  <p><%= repo.description %></p>
+  Updated <%= time_ago_in_words(repo.updated_at) %> ago
+  </div>
+</div>

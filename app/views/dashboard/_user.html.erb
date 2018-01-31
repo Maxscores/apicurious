@@ -1,0 +1,20 @@
+<div class="user">
+  <%= image_tag user.avatar_url, class: "small-image"%>
+  <div class="details">
+    <div class="names">
+      <span class="full-name"><%= user.full_name %></span>
+      <%= user.username %>
+    </div>
+    <div class="bio">
+      <%= user.bio %>
+    </div>
+    <div class="places">
+      <% if user.company %>
+        <%= render "layouts/company" %>
+        <%= user.company %>
+      <% end %>
+      <%= render "layouts/location" %>
+      <%= user.location %>
+    </div>
+  </div>
+</div>

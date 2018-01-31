@@ -1,0 +1,5 @@
+<div class="repos">
+  <% @presenter.stars.each do |repo| %>
+    <%= render partial: "repo", :locals => {:repo => repo}%>
+  <% end %>
+</div>

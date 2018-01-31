@@ -1,0 +1,5 @@
+<div class="repos">
+  <% @presenter.repositories.each do |repo| %>
+    <%= render partial: "repo", :locals => {:repo => repo}%>
+  <% end %>
+</div>
