@@ -68,6 +68,6 @@ class DashboardPresenter
   end
 
   def repository_count
-    github_user.following_count
+    github_user.public_repos_count
   end
 end
