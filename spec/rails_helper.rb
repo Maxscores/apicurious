@@ -29,8 +29,9 @@ require 'rspec/rails'
 ActiveRecord::Migration.maintain_test_schema!
 
 VCR.configure do |config|
-  config.cassette_library_dir = "fixtures/vcr_cassettes"
+  config.cassette_library_dir = "spec/fixtures/cassettes"
   config.hook_into :webmock
+  config.filter_sensitive_data("<github_user_token>") { ENV["GITHUB_USER_TOKEN"]}
 end
 
 RSpec.configure do |config|

@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'omniauth-github'
 gem 'faraday'
+gem 'figaro'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -38,10 +39,12 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'simplecov', :require => false
+  gem 'launchy'
 end
 
 group :test do
-  gem 'vcr'
+  gem 'vcr', "~> 3.0.3"
   gem 'webmock'
 end
 
