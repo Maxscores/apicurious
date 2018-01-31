@@ -75,7 +75,7 @@ describe "User visits dashboard" do
         within (".selected") do
           expect(page).to have_content("Followers")
         end
-        expect(page).to have_css(".user", count: 4)
+        expect(page).to have_css(".user", count: 5)
         within first(".user") do
           expect(page).to have_content("Luis Senior")
           expect(page).to have_content("Heybluguy")

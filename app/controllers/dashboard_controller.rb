@@ -1,5 +1,5 @@
 class DashboardController < ApplicationController
   def index
-    @presenter = DashboardPresenter.new(current_user, params[:tab]).present
+    @presenter = DashboardPresenter.new(current_user, params[:tab])
   end
 end

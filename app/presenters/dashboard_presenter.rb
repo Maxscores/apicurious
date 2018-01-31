@@ -1,34 +1,30 @@
 class DashboardPresenter
-  attr_reader :github_user,
-              :repositories,
-              :organizations,
-              :stars,
-              :followers,
-              :following,
-              :connection,
+  attr_reader :connection,
               :tab
 
   def initialize(user, tab)
     @connection = GithubConnection.new(user)
-    @github_user = @connection.get_user_info
-    @repositories = nil
-    @stars = @connection.get_stars
-    @followers = nil
-    @following = nil
     @tab = tab
   end
 
-  def present
-    if tab == "repositories"
-      @repositories = connection.get_repos
-    elsif tab == "stars"
-      @stars = connection.get_stars
-    elsif tab == "followers"
-      @followers = connection.get_followers
-    elsif tab == "following"
-      @following = connection.get_following
-    end
-    self
+  def github_user
+    connection.get_user_info
+  end
+
+  def stars
+    connection.get_stars
+  end
+
+  def repositories
+    connection.get_repos
+  end
+
+  def followers
+    connection.get_followers
+  end
+
+  def following
+    connection.get_following
   end
 
   def avatar_url
