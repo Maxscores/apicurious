@@ -1,6 +1,6 @@
 describe "Github Authenticated User visits dashboard" do
   it "sees their github profile info" do
-    VCR.use_cassette("user_basic_profile") do
+    VCR.use_cassette("features/user_sees_their_github_info") do
         user = User.create!(uid: "1235464",
                            screen_name: "Maxscores",
                            oauth_token: ENV["GITHUB_USER_TOKEN"])
