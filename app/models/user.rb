@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  validates_presence_of :uid, :screen_name, :oauth_token 
+
   def self.from_github(auth_hash)
     where(uid: auth_hash[:uid]).first_or_create do |new_user|
       new_user.uid = auth_hash.uid
@@ -6,6 +8,4 @@ class User < ApplicationRecord
       new_user.oauth_token = auth_hash.credentials.token
     end
   end
-
-  
 end

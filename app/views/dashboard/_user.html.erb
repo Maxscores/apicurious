@@ -13,8 +13,10 @@
         <%= render "layouts/company" %>
         <%= user.company %>
       <% end %>
-      <%= render "layouts/location" %>
-      <%= user.location %>
+      <% if user.location %>
+        <%= render "layouts/location" %>
+        <%= user.location %>
+      <% end %>
     </div>
   </div>
 </div>
