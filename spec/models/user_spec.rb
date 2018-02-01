@@ -28,19 +28,15 @@ describe User do
   context "class methods" do
     context "::from_github" do
       it "creates a new user" do
-        auth_hash = OpenStruct.new({
-          uid: "12346",
-          extra: OpenStruct.new({raw_info: OpenStruct.new({login: "Max"})}),
-          credentials: OpenStruct.new({token: "token"})
-          })
+        auth_hash = OmniAuth.config.mock_auth[:github]
 
         User.from_github(auth_hash)
 
         user = User.last
 
-        expect(user.uid).to eq("12346")
-        expect(user.screen_name).to eq("Max")
-        expect(user.oauth_token).to eq("token")
+        expect(user.uid).to eq("29938166")
+        expect(user.screen_name).to eq("Maxscores")
+        expect(user.oauth_token).to eq(ENV["GITHUB_USER_TOKEN"])
       end
     end
   end
