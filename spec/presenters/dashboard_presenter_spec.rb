@@ -1,7 +1,7 @@
 describe DashboardPresenter do
-  let(:user) {User.create!(uid: "1235464",
-                           screen_name: "Maxscores",
-                           oauth_token: ENV["GITHUB_USER_TOKEN"])}
+  let(:user) {User.new(uid: "1235464",
+                       screen_name: "Maxscores",
+                       oauth_token: ENV["GITHUB_USER_TOKEN"])}
 
   let(:presenter) {DashboardPresenter.new(user, "tab")}
 
