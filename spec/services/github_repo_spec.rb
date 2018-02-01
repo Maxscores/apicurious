@@ -1,18 +1,18 @@
 describe GithubRepo do
-  let(:repo_attr) {{
-    name: "repo",
-    owner: "owner",
-    full_name: "full_name",
-    description: "description",
-    private: false,
-    fork: false,
-    url: "api_url",
-    http_url: "http_url",
-    language: "ruby",
-    updated_at: Date.new
-    }}
-
   it "exists" do
+    repo_attr = {
+      name: "repo",
+      owner: "owner",
+      full_name: "full_name",
+      description: "description",
+      private: false,
+      fork: false,
+      url: "api_url",
+      http_url: "http_url",
+      language: "ruby",
+      updated_at: Date.new
+      }
+
     repo = GithubRepo.new(repo_attr)
 
     expect(repo).to be_a GithubRepo
