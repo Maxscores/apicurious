@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Thu, 01 Feb 2018 00:28:41 GMT
+      - Thu, 01 Feb 2018 00:44:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33,7 +33,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4932'
+      - '4837'
       X-Ratelimit-Reset:
       - '1517448234'
       Cache-Control:
@@ -68,9 +68,9 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.050275'
+      - '0.043687'
       X-Github-Request-Id:
-      - EECD:5C58:11BFEDA:2382EAB:5A725F39
+      - BD2F:5C58:11D441B:23AC0AC:5A7262FC
     body:
       encoding: ASCII-8BIT
       string: '{"login":"Maxscores","id":29938166,"avatar_url":"https://avatars1.githubusercontent.com/u/29938166?v=4","gravatar_id":"","url":"https://api.github.com/users/Maxscores","html_url":"https://github.com/Maxscores","followers_url":"https://api.github.com/users/Maxscores/followers","following_url":"https://api.github.com/users/Maxscores/following{/other_user}","gists_url":"https://api.github.com/users/Maxscores/gists{/gist_id}","starred_url":"https://api.github.com/users/Maxscores/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Maxscores/subscriptions","organizations_url":"https://api.github.com/users/Maxscores/orgs","repos_url":"https://api.github.com/users/Maxscores/repos","events_url":"https://api.github.com/users/Maxscores/events{/privacy}","received_events_url":"https://api.github.com/users/Maxscores/received_events","type":"User","site_admin":false,"name":"Max
@@ -78,5 +78,5 @@ http_interactions:
         - Student(Backend Software Development)\r\n\r\n@ColoradoSchoolofMines - B.S.
         Metallurgical and Materials Engineering ","public_repos":28,"public_gists":18,"followers":5,"following":8,"created_at":"2017-07-06T03:55:31Z","updated_at":"2018-01-30T18:50:07Z"}'
     http_version: 
-  recorded_at: Thu, 01 Feb 2018 00:28:50 GMT
+  recorded_at: Thu, 01 Feb 2018 00:45:00 GMT
 recorded_with: VCR 3.0.3
