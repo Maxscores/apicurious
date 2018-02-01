@@ -1,14 +1,12 @@
 class DashboardPresenter
   attr_reader :connection,
-              :tab
+              :tab,
+              :github_user
 
   def initialize(user, tab)
     @connection = GithubConnection.new(user)
     @tab = tab
-  end
-
-  def github_user
-    connection.get_user_info
+    @github_user = @connection.get_user_info
   end
 
   def stars
