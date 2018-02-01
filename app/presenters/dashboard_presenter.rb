@@ -7,20 +7,20 @@ class DashboardPresenter
   def initialize(user, tab)
     @connection ||= GithubConnection.new(user)
     @tab = tab
-    @github_user ||= @connection.get_user_info
-    @stars ||= connection.get_stars
+    @github_user ||= @connection.get_authorized_user_info
+    @stars ||= connection.get_authorized_stars
   end
 
   def repositories
-    connection.get_repos
+    connection.get_authorized_repos
   end
 
   def followers
-    connection.get_followers
+    connection.get_authorized_followers
   end
 
   def following
-    connection.get_following
+    connection.get_authorized_following
   end
 
   def avatar_url

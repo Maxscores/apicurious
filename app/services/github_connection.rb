@@ -6,43 +6,50 @@ class GithubConnection
     @token = user.oauth_token
   end
 
-  def github_connection
+  def authorized
     Faraday.new(:url => "https://api.github.com",
                 :headers => {"Authorization" => "token #{token}"})
   end
 
-  def get_user_info
-    response = github_connection.get('/user')
-    GithubUser.new(JSON.parse(response.body))
+  def parse_json(response_body)
+    JSON.parse(response_body, symbolize_names: true)
   end
 
-  def get_repos
-    response = github_connection.get("/users/#{username}/repos")
-    JSON.parse(response.body).map do |repo|
+  def get_authorized_user_info
+    response = authorized.get('/user')
+    GithubUser.new(parse_json(response.body))
+  end
+
+  def get_user_info(login_name)
+    user = parse_json(authorized.get("/users/#{login_name}").body)
+    GithubUser.new(user)
+  end
+
+  def get_authorized_repos
+    response = authorized.get("/users/#{username}/repos")
+    parse_json(response.body).map do |repo|
       GithubRepo.new(repo)
     end
   end
 
-  def get_stars
-    response = github_connection.get("/users/#{username}/starred")
-    JSON.parse(response.body).map do |star|
+  def get_authorized_stars
+    response = authorized.get("/users/#{username}/starred")
+    parse_json(response.body).map do |star|
       GithubRepo.new(star)
     end
   end
 
-  def get_followers
-    response = github_connection.get("/user/followers")
-    JSON.parse(response.body).map do |user|
-      user = JSON.parse(github_connection.get("/users/#{user["login"]}").body)
-      GithubUser.new(user)
+  def get_authorized_followers
+    response = authorized.get("/user/followers")
+    parse_json(response.body).map do |user|
+      get_user_info(user[:login])
     end
   end
 
-  def get_following
-    response = github_connection.get("/user/following")
-    JSON.parse(response.body).map do |user|
-      user = JSON.parse(github_connection.get("/users/#{user["login"]}").body)
-      GithubUser.new(user)
+  def get_authorized_following
+    response = authorized.get("/user/following")
+    parse_json(response.body).map do |user|
+      get_user_info(user[:login])
     end
   end
 end
